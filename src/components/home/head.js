@@ -9,7 +9,7 @@ export default function Head() {
       className="Section Header flex flex-col justify-center items-center relative text-white "
     >
       <div className="Header-overlay"></div>
-      <div className=" z-10 py-11">
+      <div className=" z-10 pt-20 pb-6">
         <Image
           alt="Picture of the author in 8-bit style"
           src="/avatar.png"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionHead from "@/components/home/head";
+import SectionContactMe from "@/components/home/contact";
 
 import "./home.css";
 
@@ -7,10 +8,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <SectionHead />
-      <section id="about" className="Section">
+      <section id="about" className="Section Section--white">
+        <h3 className="Title">About me</h3>
         <div className=" grid grid-cols-2 justify-center">
-          <div>
-            <p>Hi, it's Soroush</p>
+          <div className=" text-justify">
+            <p>Hi, it’s Soroush</p>
             <p>
               I’m a software engineer eager about game development. I worked as
               a software engineer in different teams in the tech industry for
@@ -29,7 +31,7 @@ export default function Home() {
               challenges in game programming.
             </p>
             <p>
-              I'm always open to talk and I like to collaborate on different
+              I’m always open to talk and I like to collaborate on different
               projects.Feel free to reach me by email. Our links below
             </p>
             <ul>Linkedin link, github</ul>
@@ -46,14 +48,13 @@ export default function Home() {
         </div>
       </section>
       <section id="projects" className="Section">
+        <h3 className="Title col-span-2 h-min">Projects</h3>
         Showcase works
       </section>
-      <section id="skills" className="Section">
-        <div>Skills</div>
+      <section id="skills" className="Section Section--white">
+        <h3 className="Title col-span-2 h-min">Skills</h3>
       </section>
-      <section id="contact" className="Section">
-        contact
-      </section>
+      <SectionContactMe />
     </main>
   );
 }
