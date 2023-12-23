@@ -52,7 +52,7 @@ export default function Home() {
         Showcase works
       </section>
       <section id="skills" className="Section Section--white">
-        <h3 className="Title col-span-2 h-min">Skills</h3>
+        <h3 className="Title col-span-2 h-min">Technical Skills</h3>
       </section>
       <SectionContactMe />
     </main>
