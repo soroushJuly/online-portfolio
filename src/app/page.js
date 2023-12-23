@@ -1,39 +1,51 @@
 import Image from "next/image";
-// import Footer from '@/components/footer'
-import Footer from "@/components/footer";
+import SectionHead from "@/components/home/head";
 
 import "./home.css";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <section
-        href="#start"
-        className="Section Header flex flex-col justify-center items-center"
-      >
-        <div>
-          <Image
-            alt="Picture of the author in 8-bit style"
-            src="/avatar.png"
-            width="250"
-            height="250"
-            className=" rounded-full"
-          />
-        </div>
-        <div>
-          <h2 className=" text-7xl py-5 text-blue-800 font-extrabold tracking-wider ">
-            Soroush Jolai
-          </h2>
-        </div>
-        <div className=" tracking-wide">
-          <h3 className=" text-3xl py-2">Software Engineer</h3>
-          <h3 className=" text-3xl py-2">Game Programmer</h3>
+      <SectionHead />
+      <section id="about" className="Section">
+        <div className="flex justify-center">
+          <div>
+            <p>Hi, it's Soroush</p>
+            <p>
+              I’m a software engineer eager about game development. I worked as
+              a software engineer in different teams in the tech industry for
+              about 2 years. I’m currently studying for a master’s in computer
+              games technology with an expected end date of August 2024. The
+              focus of my course is on C++ programming and learning the
+              essential math skills to build high-quality games, I’ve also
+              completed an in-depth Udemy course on C++ and Unreal engine,
+              therefore I have a robust understanding of C++. Based on my
+              experience I can learn new programming languages fast and can
+              easily understand and work on top of others’ codes. Also, I’m
+              comfortable using company-specific engines to build a game as I
+              did in my course. On top of that, I’m working on the game engine
+              we used at the university and improving it. I have had a passion
+              for games from a young age and Now I can’t wait to face new
+              challenges in game programming.
+            </p>
+            <p>
+              I'm always open to talk and I like to collaborate on different
+              projects.Feel free to reach me by email. Our links below
+            </p>
+            <ul>Linkedin link, github</ul>
+          </div>
+          <div>Interests</div>
         </div>
       </section>
-      <section href="#about">About</section>
-      <section href="#projects">Showcase works</section>
-      <section href="skills">Skills</section>
-      <section href="contact">contact</section>
+      <section id="projects" className="Section">
+        Showcase works
+      </section>
+      <section id="skills" className="Section">
+        <div>Skills</div>
+      </section>
+      <section id="contact" className="Section">
+        contact
+      </section>
     </main>
   );
 }

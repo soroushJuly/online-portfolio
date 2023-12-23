@@ -1,27 +1,51 @@
+"use client";
+
+import Link from "next/link";
+import React, { useEffect } from "react";
+
+// import useEffect from "react";
+
 import "./header.css";
 
 const Header = () => {
+  // Sticky Menu Area
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = (e) => {
+    const header = document.querySelector(".app-header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
+  };
+
   return (
-    <nav className="flex bg-fuchsia-950 p-6 text-center text-white justify-between">
+    <header className="app-header flex p-6 text-center text-white justify-between">
       {/* <Logo></Logo> */}
       <div className=" pr-80">Soroush Jolai</div>
       <nav>
-        <ul className="flex">
+        <ul className="flex text-2xl">
           <li>
-            <a href="#">About</a>
+            <Link href="/#about">About</Link>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <Link href="/#projects">Projects</Link>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <Link href="/#skills">Skills</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link href="/#contact">Contact</Link>
           </li>
         </ul>
       </nav>
-    </nav>
+    </header>
   );
 };
 
