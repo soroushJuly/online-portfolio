@@ -1,0 +1,8 @@
+.Header {
+  background-image: url("/public/avatar.png");
+}
+
+.Section {
+  padding: 40px 50px;
+  width: 100%;
+}
