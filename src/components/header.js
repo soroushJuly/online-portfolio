@@ -20,7 +20,7 @@ const Header = () => {
   const isSticky = (e) => {
     const header = document.querySelector(".app-header");
     const scrollTop = window.scrollY;
-    scrollTop >= 250
+    scrollTop >= 110
       ? header.classList.add("is-sticky")
       : header.classList.remove("is-sticky");
   };
@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header className="app-header flex p-6 text-center text-white justify-between">
       {/* <Logo></Logo> */}
-      <div className=" pr-80">Soroush Jolai</div>
+      <div className=" pr-80 text-2xl">Soroush Jolai</div>
       <nav>
         <ul className="flex text-2xl">
           <li>

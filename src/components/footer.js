@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className=" bg-fuchsia-950 p-6 text-center">
+    <footer className=" bg-black p-2 text-center">
       <small className=" text-white">
         &copy; Copyright 2023, Soroush Jolai. All Rights Reserved.
       </small>

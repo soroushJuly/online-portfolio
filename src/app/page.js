@@ -8,7 +8,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <SectionHead />
       <section id="about" className="Section">
-        <div className="flex justify-center">
+        <div className=" grid grid-cols-2 justify-center">
           <div>
             <p>Hi, it's Soroush</p>
             <p>
@@ -34,7 +34,15 @@ export default function Home() {
             </p>
             <ul>Linkedin link, github</ul>
           </div>
-          <div>Interests</div>
+          <div>
+            <h4>Interests</h4>
+            <ul className="flex flex-col">
+              <li>interest 1</li>
+              <li>interest 2</li>
+              <li>interest 3</li>
+              <li>interest 4</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="projects" className="Section">
