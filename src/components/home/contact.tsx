@@ -12,8 +12,6 @@ export type FormData = {
   message: string,
 };
 
-import "./contact.css";
-
 const  Contact: FC = () => {
   const { register, handleSubmit } = useForm();
   const pp = process.env.MY_EMAIL;
