@@ -90,7 +90,7 @@ const  Contact: FC = () => {
             </li>
             <li className="hover:bg-orange-200 rounded-full">
               <a href="https://github.com/soroushJuly" target="blank">
-                <Image alt="LinkedIn Icon" width="50" height="50" src="/github.svg" />
+                <Image alt="Github Icon" width="50" height="50" src="/github.svg" />
               </a>
             </li>
           </ul>
