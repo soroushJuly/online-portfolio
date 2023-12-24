@@ -42,24 +42,26 @@ const Skills = () => {
   return (
     <section id="skills" className="Section Section--white">
       <h3 className="Title col-span-2 h-min">Technical Skills</h3>
-      <p className="text-xl mb-2 text-center">
+      <p className="md:text-xl mb-2 text-center">
         I always have the enthusiasm to learn more.
       </p>
-      <h4 className=" text-3xl underline my-4">Programming languages:</h4>
-      <ul className=" Button-list flex text-xl font-semibold mb-2">
+      <h4 className=" text-xl md:text-3xl underline mb-2 mt-4 md:my-4">
+        Programming languages:
+      </h4>
+      <ul className=" Button-list flex md:text-xl font-semibold mb-2">
         {langListItems}
       </ul>
-      <p className=" border-2 rounded border-gray-400 p-3">
+      <p className=" border-2 rounded text-sm md:text-base border-gray-400 p-3">
         {langs[activeLang].description}
       </p>
 
-      <h4 className=" text-3xl underline my-4">
+      <h4 className=" text-xl md:text-3xl underline mb-2 mt-4 md:my-4">
         Engines\Frameworks\Software Used Most Frequently:
       </h4>
-      <ul className=" Button-list flex text-xl font-semibold mb-2">
+      <ul className=" Button-list flex flex-wrap md:text-xl font-semibold mb-2">
         {toolListItems}
       </ul>
-      <p className=" border-2 rounded border-gray-400 p-3 mb-4">
+      <p className=" border-2 rounded text-sm md:text-base border-gray-400 p-3 mb-4">
         {tools[activeTool].description}
       </p>
     </section>

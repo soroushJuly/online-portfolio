@@ -28,7 +28,9 @@ const Header = () => {
   return (
     <header className="app-header flex p-2 md:p-6 text-center text-white justify-between">
       {/* <Logo></Logo> */}
-      <div className=" pr-8 sm:pr-14 md:pr-80 md:text-2xl">Soroush Jolai</div>
+      <div className=" pr-8 sm:pr-14 md:pr-80 text-sm md:text-2xl">
+        Soroush Jolai
+      </div>
       <nav>
         <ul className="flex md:text-2xl">
           <li>

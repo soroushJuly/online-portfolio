@@ -17,7 +17,7 @@
 }
 
 .Section {
-  padding: 45px 20px;
+  padding: 25px 20px;
   @screen md {
     padding: 45px 160px;
   }
@@ -29,7 +29,8 @@
 }
 
 .Section .Title {
-  font-size: 40px;
+  /* @apply text-2xl; */
+  font-size: 20px;
   text-decoration: dashed;
   border-bottom: 2px;
   border-color: orange;
@@ -37,7 +38,12 @@
   font-weight: 600;
   width: fit-content;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  @screen md {
+    font-size: 40px;
+    margin-bottom: 40px;
+    /* @apply text-4xl; */
+  }
 }
 
 .Section .Title::after {

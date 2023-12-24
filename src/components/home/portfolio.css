@@ -2,5 +2,11 @@
   background-color: blanchedalmond;
 }
 .tag {
-  margin-right: 12px;
+  margin-right: 4px;
+  @screen md {
+    margin-right: 12px;
+  }
+}
+.tag button {
+  min-width: 55px;
 }

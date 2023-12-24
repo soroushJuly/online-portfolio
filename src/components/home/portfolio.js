@@ -51,7 +51,7 @@ const Portfolio = () => {
   const projectListItems = filteredProjectList.map((project) => (
     <li
       key={project.id}
-      className="mb-3 md:w-72 h-80 hover:shadow-md text-center rounded"
+      className="mb-3 w-full sm:w-72 h-80 hover:shadow-md text-center rounded"
     >
       <button className=" relative">
         <div className=" text-center">
@@ -74,9 +74,11 @@ const Portfolio = () => {
     <section id="projects" className="Section">
       <h3 className="Title col-span-2 h-min">Projects</h3>
       <div className=" text-center mb-3">
-        <span className=" text-lg">Filter projects by tags:</span>
+        <span className=" md:text-lg">Filter projects by tags:</span>
       </div>
-      <ul className="flex justify-center mb-6">{tagListItems}</ul>
+      <ul className="flex flex-wrap justify-center mb-4 md:mb-6">
+        {tagListItems}
+      </ul>
       <ul className="flex flex-wrap">{projectListItems}</ul>
     </section>
   );
