@@ -3,11 +3,19 @@
 import Image from "next/image";
 import { useState } from "react";
 import { projectList, tagList } from "@/utils/data";
+import ModalManager from "@/components/modal-manager";
 
 import "./portfolio.css";
 
 const Portfolio = () => {
   const [activeTags, setActiveTags] = useState([]);
+  const [activeProject, setActiveProject] = useState({});
+  const [showModal, setShowModal] = useState(false);
+
+  const handleProjectClick = (project) => {
+    setShowModal(true);
+    setActiveProject(project);
+  };
 
   const handleTagClick = (name) => {
     if (checkTagInList(name)) {
@@ -53,7 +61,7 @@ const Portfolio = () => {
       key={project.id}
       className="mb-3 w-full sm:w-72 h-80 hover:shadow-md text-center rounded"
     >
-      <button className=" relative">
+      <button className=" relative" onClick={() => handleProjectClick(project)}>
         <div className=" text-center">
           <Image
             alt={project.title}
@@ -72,6 +80,11 @@ const Portfolio = () => {
 
   return (
     <section id="projects" className="Section">
+      <ModalManager
+        activeModal={activeProject}
+        isShowModal={showModal}
+        onCloseClick={() => setShowModal(false)}
+      />
       <h3 className="Title col-span-2 h-min">Projects</h3>
       <div className=" text-center mb-3">
         <span className=" md:text-lg">Filter projects by tags:</span>

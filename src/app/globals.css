@@ -30,3 +30,7 @@ html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
 }
+
+.Modal__body {
+  max-height: calc(100vh - 200px);
+}

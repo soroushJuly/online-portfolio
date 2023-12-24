@@ -50,6 +50,7 @@ export const projectList = [
     thumbnail: "/thumb-the-traveller.png",
     description: "C++ | OpenGL | AI",
     tags: ["Game", "c++", "AI", "Graphics"],
+    modal: "Traveller",
   },
   {
     id: 1,
@@ -59,6 +60,7 @@ export const projectList = [
     thumbnail: "/thumb-the-traveller.png",
     description: "Unreal | Game Design | Blueprints",
     tags: ["Game", "Unreal", "c++"],
+    modal: "Bokeh",
   },
   {
     id: 2,
