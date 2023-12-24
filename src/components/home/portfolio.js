@@ -1,19 +1,57 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import { projectList, tagList } from "@/utils/data";
 
+import "./portfolio.css";
+
 const Portfolio = () => {
+  const [activeTags, setActiveTags] = useState([]);
+
+  const handleTagClick = (name) => {
+    if (checkTagInList(name)) {
+      setActiveTags(activeTags.filter((tag) => tag !== name));
+    } else {
+      setActiveTags(activeTags.concat(name));
+    }
+  };
+
+  const checkTagInList = (tag) => {
+    return activeTags.includes(tag);
+  };
+
   const tagListItems = tagList.map((tag) => (
-    <li key={tag.id} className="mr-3">
-      <button className=" border-purple-400 border-2 rounded-xl hover:bg-slate-300 md:px-2">
+    <li
+      className={checkTagInList(tag.name) ? "tag tag--active" : "tag"}
+      key={tag.id}
+    >
+      <button
+        className=" border-purple-400 border-2 rounded-xl hover:bg-slate-300 md:px-2"
+        onClick={() => handleTagClick(tag.name)}
+      >
         {tag.name}
       </button>
     </li>
   ));
 
-  const projectListItems = projectList.map((project) => (
+  function checkTags(project) {
+    if (!activeTags.length) {
+      return project;
+    }
+    for (let i = 0; i < activeTags.length; i++) {
+      const element = activeTags[i];
+      if (project.tags.includes(element)) {
+        return project;
+      }
+    }
+  }
+
+  const filteredProjectList = projectList.filter(checkTags);
+  const projectListItems = filteredProjectList.map((project) => (
     <li
       key={project.id}
-      className="mb-3 md:w-72 h-80 hover:shadow-md text-center"
+      className="mb-3 md:w-72 h-80 hover:shadow-md text-center rounded"
     >
       <button className=" relative">
         <div className=" text-center">
@@ -22,7 +60,7 @@ const Portfolio = () => {
             src={project.thumbnail}
             width="200"
             height="200"
-            className="mx-auto"
+            className="mx-auto mt-2"
           ></Image>
           <p>{project.position}</p>
           <p>{project.date}</p>

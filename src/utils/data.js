@@ -35,8 +35,8 @@ export const interests = [];
 
 // -------------------- Portfolio -------------------- //
 export const tagList = [
-  { id: 0, name: "game" },
-  { id: 1, name: "web" },
+  { id: 0, name: "Game" },
+  { id: 1, name: "Web" },
   { id: 2, name: "AI" },
   { id: 3, name: "Graphics" },
   { id: 4, name: "Unreal" },
@@ -49,7 +49,7 @@ export const projectList = [
     date: "2023",
     thumbnail: "/thumbs/the-traveller.png",
     description: "C++ | OpenGL | AI",
-    tags: ["game", "c++", "AI", "Graphics"],
+    tags: ["Game", "c++", "AI", "Graphics"],
   },
   {
     id: 1,
@@ -67,7 +67,7 @@ export const projectList = [
     date: "2021 - 2022",
     thumbnail: "/thumbs/the-traveller.png",
     description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
-    tags: ["web"],
+    tags: ["Web"],
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ export const projectList = [
     date: "2021",
     thumbnail: "/thumbs/the-traveller.png",
     description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
-    tags: ["web"],
+    tags: ["Web"],
   },
   {
     id: 4,
@@ -85,6 +85,6 @@ export const projectList = [
     date: "2020",
     thumbnail: "/thumbs/the-traveller.png",
     description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
-    tags: ["web"],
+    tags: ["Web"],
   },
 ];
