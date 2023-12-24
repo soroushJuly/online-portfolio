@@ -87,4 +87,13 @@ export const projectList = [
     description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
     tags: ["Web"],
   },
+  {
+    id: 5,
+    title: "Online Portfolio",
+    position: "Software Developer/Designer",
+    date: "2023",
+    thumbnail: "/thumbs/the-traveller.png",
+    description: "JavaScript | React.js | Next.js | HTML | CSS",
+    tags: ["Web"],
+  },
 ];
