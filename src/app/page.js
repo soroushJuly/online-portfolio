@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionHead from "@/components/home/head";
 import SectionContactMe from "@/components/home/contact";
+import SectionSkills from "@/components/home/skills";
 
 import "./home.css";
 
@@ -51,9 +52,7 @@ export default function Home() {
         <h3 className="Title col-span-2 h-min">Projects</h3>
         Showcase works
       </section>
-      <section id="skills" className="Section Section--white">
-        <h3 className="Title col-span-2 h-min">Technical Skills</h3>
-      </section>
+      <SectionSkills />
       <SectionContactMe />
     </main>
   );
