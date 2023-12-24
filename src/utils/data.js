@@ -58,7 +58,7 @@ export const projectList = [
     date: "2023",
     thumbnail: "/thumbs/the-traveller.png",
     description: "Unreal | Game Design | Blueprints",
-    tags: ["Unreal", "c++"],
+    tags: ["Game", "Unreal", "c++"],
   },
   {
     id: 2,
