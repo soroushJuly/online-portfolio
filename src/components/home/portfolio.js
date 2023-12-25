@@ -59,10 +59,10 @@ const Portfolio = () => {
   const projectListItems = filteredProjectList.map((project) => (
     <li
       key={project.id}
-      className="mb-3 w-full sm:w-72 h-80 hover:shadow-md text-center rounded"
+      className="mb-3 w-full sm:w-72 h-80 hover:shadow-lg hover:-translate-y-2 transition-all hover:bg-slate-200 text-center rounded"
     >
       <button className=" relative" onClick={() => handleProjectClick(project)}>
-        <div className=" text-center">
+        <div className=" text-center text-sm">
           <Image
             alt={project.title}
             src={project.thumbnail}
@@ -87,7 +87,11 @@ const Portfolio = () => {
       />
       <h3 className="Title col-span-2 h-min">Projects</h3>
       <div className=" text-center mb-3">
-        <span className=" md:text-lg">Filter projects by tags:</span>
+        <span className=" md:text-lg">
+          These are some of the projects that I have done. including the
+          employed-projects, learning-base project, and self-projects.{" "}
+          <u>Filter projects by tags:</u>
+        </span>
       </div>
       <ul className="flex flex-wrap justify-center mb-4 md:mb-6">
         {tagListItems}
