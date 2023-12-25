@@ -34,7 +34,7 @@ const Traveller = ({ onCloseClick }) => {
                 <b>Duration: </b>3 months
               </p>
             </div>
-            <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+            <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
               <b>Description:</b> The Traveller is a 3D Platformer game
               developed by me using <b>a custom game engine</b>. The game has a
               cartoony theme and several gameplay elements. Right now the game
@@ -43,10 +43,10 @@ const Traveller = ({ onCloseClick }) => {
               fully coded in C++. I developed almost all the features only using
               low-level code without help of any extra libraries.
             </p>
-            <span className="my-4 text-blueGray-500 text-lg leading-relaxed font-semibold">
+            <span className=" my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>
-            <ul className=" ml-2 list-disc list-inside text-gray-600">
+            <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
               <li>
                 Developed <b>Finite State Machine</b> for enemies.
               </li>

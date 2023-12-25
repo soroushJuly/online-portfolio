@@ -35,7 +35,7 @@ const Bokeh = ({ onCloseClick }) => {
                 <b>Duration: </b>6 months
               </p>
             </div>
-            <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+            <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
               <b>Description:</b> HiExchange is the name a web application that
               I developed from scratch using Nuxt.js and Vue.js in 6 month. This
               website is a safe place for digital currency exchange.&nbsp;
@@ -43,10 +43,10 @@ const Bokeh = ({ onCloseClick }) => {
                 Link to the website
               </a>
             </p>
-            <span className="my-4 text-blueGray-500 text-lg leading-relaxed font-semibold">
+            <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>
-            <ul className=" ml-2 list-disc list-inside text-gray-600">
+            <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
               <li>Worked in professional teams.</li>
               <li>
                 Solved all the challenges through process of developing a

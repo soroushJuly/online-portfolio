@@ -35,7 +35,7 @@ const Bokeh = ({ onCloseClick }) => {
                 <b>Duration: </b>3 months
               </p>
             </div>
-            <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+            <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
               <b>Description:</b> Bokeh is the name of the game prototype that I
               developed during Game Development Process module. I wrote a Game
               Design Document for this game and then using Unreal Engine and
@@ -44,10 +44,10 @@ const Bokeh = ({ onCloseClick }) => {
               can take pictures with, also you can review the pictures taken
               before and save the one you like on your hard drive.
             </p>
-            <span className="my-4 text-blueGray-500 text-lg leading-relaxed font-semibold">
+            <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>
-            <ul className=" ml-2 list-disc list-inside text-gray-600">
+            <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
               <li>Wrote an industry standard Game Design Document.</li>
               <li dangerouslySetInnerHTML={{ __html: bokeh.f1 }}></li>
               <li>
