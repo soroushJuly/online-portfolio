@@ -83,9 +83,10 @@ export const projectList = [
     title: "HiExchange",
     position: "Software Developer",
     date: "2021",
-    thumbnail: "/thumb-the-traveller.jpg",
+    thumbnail: "/thumb-hi-exchange.jpg",
     description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
     tags: ["Web"],
+    modal: "HiExchange",
   },
   {
     id: 4,
