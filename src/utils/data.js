@@ -74,9 +74,10 @@ export const projectList = [
     title: "OstadBank",
     position: "Software developer",
     date: "2021 - 2022",
-    thumbnail: "/thumb-bokeh.jpg",
+    thumbnail: "/thumb-ostadbank.jpg",
     description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
     tags: ["Web"],
+    modal: "Ostadbank",
   },
   {
     id: 3,

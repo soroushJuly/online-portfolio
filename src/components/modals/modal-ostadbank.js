@@ -1,15 +1,16 @@
 import ModalFooter from "@/components/modals/modal-footer";
 import ModalHeader from "@/components/modals/modal-header";
 import Image from "next/image";
+import { ostadbank } from "@/utils/data-modals";
 
 const Bokeh = ({ onCloseClick }) => {
-  const link = "https://hi.exchange/";
+  const link = "https://www.ostadbank.com/";
   return (
     <>
       <div className="Modal">
         <div className="Modal__content">
           <ModalHeader
-            title="HiExchange"
+            title="Ostadbank"
             position="Software developer"
             onCloseClick={onCloseClick}
           />
@@ -17,7 +18,7 @@ const Bokeh = ({ onCloseClick }) => {
           <div className="Modal__body">
             <div className=" w-1/2 mx-auto">
               <Image
-                src="/hi-exchange/01.png"
+                src="/ostadbank/01.png"
                 alt="screenshot of the game"
                 className="mx-auto"
                 sizes="100vw"
@@ -29,16 +30,19 @@ const Bokeh = ({ onCloseClick }) => {
                 height={150}
               />
               <p>
-                <b>Date: </b>2021
+                <b>Date: </b>2021 - 2022
               </p>
               <p>
-                <b>Duration: </b>6 months
+                <b>Duration: </b>9 months
               </p>
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b> HiExchange is the name a web application that
-              I developed from scratch using Nuxt.js and Vue.js in 6 month. This
-              website is a safe place for digital currency exchange.&nbsp;
+              <b>Description:</b> Ostadbank is a platform for students to find
+              an online tutor. I worked on this project for 9 months as a
+              Front-end developer part of a team of three. I was responsible for
+              doing front-end tasks and working on the website to improve the{" "}
+              <b>UI, performance, and interactability</b>. I used Vue.js &
+              Nuxt.js in this project.&nbsp;
               <a href={link} target="blank" className=" text-sm text-blue-700">
                 Link to the website
               </a>
@@ -47,6 +51,10 @@ const Bokeh = ({ onCloseClick }) => {
               Features & skills:{" "}
             </span>
             <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
+              <li dangerouslySetInnerHTML={{ __html: ostadbank.f1 }} />
+              <li>
+                Worked on a <b>large code base</b>.
+              </li>
               <li>Worked in professional teams.</li>
               <li>
                 Handled <b>Restful APIs</b> on the client-side.
