@@ -3,6 +3,7 @@ import Bokeh from "@/components/modals/modal-bokeh";
 import HiExchange from "@/components/modals/modal-hi-exchange";
 import Ostadbank from "@/components/modals/modal-ostadbank";
 import Ezreez from "@/components/modals/modal-ezreez";
+import Portfolio from "@/components/modals/modal-portfolio";
 // import { projectList } from "@/utils/data";
 
 export default function Modal({ activeModal, isShowModal, onCloseClick }) {
@@ -18,6 +19,8 @@ export default function Modal({ activeModal, isShowModal, onCloseClick }) {
         return <HiExchange onCloseClick={onCloseClick} />;
       case "Ezreez":
         return <Ezreez onCloseClick={onCloseClick} />;
+      case "Portfolio":
+        return <Portfolio onCloseClick={onCloseClick} />;
         break;
 
       default:

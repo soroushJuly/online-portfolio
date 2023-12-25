@@ -104,8 +104,9 @@ export const projectList = [
     title: "Online Portfolio",
     position: "Software Developer/Designer",
     date: "2023",
-    thumbnail: "/thumb-the-traveller.jpg",
+    thumbnail: "/thumb-portfolio.jpg",
     description: "JavaScript | React.js | Next.js | HTML | CSS",
     tags: ["Web"],
+    modal: "Portfolio",
   },
 ];
