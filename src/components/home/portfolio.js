@@ -88,8 +88,8 @@ const Portfolio = () => {
       <h3 className="Title col-span-2 h-min">Projects</h3>
       <div className=" text-center mb-3">
         <span className=" md:text-lg">
-          These are some of the projects that I have done. including the
-          employed-projects, learning-base project, and self-projects.{" "}
+          These are some of the projects that I have done. Including the
+          employed-projects, learning-based project, and personal projects.{" "}
           <u>Filter projects by tags:</u>
         </span>
       </div>
