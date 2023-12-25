@@ -1,5 +1,7 @@
 import ModalFooter from "@/components/modals/modal-footer";
 import ModalHeader from "@/components/modals/modal-header";
+import Image from "next/image";
+import { bokeh } from "@/utils/data-modals";
 
 const Bokeh = ({ onCloseClick }) => {
   return (
@@ -12,8 +14,60 @@ const Bokeh = ({ onCloseClick }) => {
             onCloseClick={onCloseClick}
           />
           {/*body*/}
-          <div className="relative p-6 flex-auto">
-            <p className="my-4 text-blueGray-500 text-lg leading-relaxed"></p>
+          <div className="Modal__body">
+            <div className=" w-1/2 mx-auto">
+              <Image
+                src="/bokeh/01.png"
+                alt="screenshot of the game"
+                className="mx-auto"
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+                width={300}
+                height={150}
+              />
+              <p>
+                <b>Date: </b>2023
+              </p>
+              <p>
+                <b>Duration: </b>3 months
+              </p>
+            </div>
+            <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+              <b>Description:</b> Bokeh is the name of the game prototype that I
+              developed during Game Development Process module. I wrote a Game
+              Design Document for this game and then using Unreal Engine and
+              blueprints I made a prototype of the game. This is serious game
+              about photography. I have implemented an in-game camera that you
+              can take pictures with, also you can review the pictures taken
+              before and save the one you like on your hard drive.
+            </p>
+            <span className="my-4 text-blueGray-500 text-lg leading-relaxed font-semibold">
+              Features & skills:{" "}
+            </span>
+            <ul className=" ml-2 list-disc list-inside text-gray-600">
+              <li>Wrote an industry standard Game Design Document.</li>
+              <li dangerouslySetInnerHTML={{ __html: bokeh.f1 }}></li>
+              <li>
+                Used blueprints to make a timer, interactable areas, and etc.
+              </li>
+              <li>
+                Develope a HUD using <b>UMG UI</b> system in Unreal Engine.
+              </li>
+              <li>
+                Developed a <b>lively HUD</b> using OpenGL 2D renderer.
+              </li>
+              <li>
+                Made the environment with the <b>Landscape System</b> in Unreal
+                Engine.
+              </li>
+              <li>
+                Made realistic grass and flowers using <b>Foliage System</b> in
+                Unreal Engine
+              </li>
+            </ul>
           </div>
           <ModalFooter onCloseClick={onCloseClick} />
         </div>

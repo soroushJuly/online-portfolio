@@ -35,12 +35,12 @@ const Traveller = ({ onCloseClick }) => {
               </p>
             </div>
             <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-              <b>Description:</b> The Traveller is a 3D adventure game developed
-              by me using <b>a custom game engine</b>. The game has a cartoony
-              theme and several gameplay elements. Right now the game has only
-              level. The goal of the game is to reach the village on time and
-              save the village by defeating the final boss. The game is fully
-              coded in C++. I developed almost all the features only using
+              <b>Description:</b> The Traveller is a 3D Platformer game
+              developed by me using <b>a custom game engine</b>. The game has a
+              cartoony theme and several gameplay elements. Right now the game
+              has only level. The goal of the game is to reach the village on
+              time and save the village by defeating the final boss. The game is
+              fully coded in C++. I developed almost all the features only using
               low-level code without help of any extra libraries.
             </p>
             <span className="my-4 text-blueGray-500 text-lg leading-relaxed font-semibold">
