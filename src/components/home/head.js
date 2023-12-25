@@ -12,7 +12,7 @@ export default function Head() {
       <div className=" z-10 pt-9 md:pt-20 pb-2 md:pb-6">
         <Image
           alt="Picture of the author in 8-bit style"
-          src="/avatar.png"
+          src="/avatar-01.jpg"
           width="270"
           height="270"
           className=" Header__avatar "

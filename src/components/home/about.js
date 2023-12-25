@@ -1,21 +1,24 @@
-import { about } from "@/utils/data";
+import { about, interests } from "@/utils/data";
 import Image from "next/image";
 
 const About = () => {
   return (
     <section id="about" className="Section Section--white">
-      <h3 className="Title">About me</h3>
+      <h3 className="Title">About Me</h3>
       <div className=" grid md:grid-cols-2 justify-center">
-        <div className=" text-justify mb-2 md:mb-0">
-          <p className=" md:text-lg mb-2">{about.p1}</p>
-          <p className=" md:text-lg mb-2">{about.p2}</p>
-          <p className=" md:text-lg mb-2">
-            I’m always open to talk and I like to collaborate on different
-            projects.Feel free to reach me by{" "}
+        <div className=" md:text-base mb-2 md:mb-0">
+          <p
+            className=" md:text-lg  mb-2"
+            dangerouslySetInnerHTML={{ __html: about.p1 }}
+          ></p>
+          <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p2 }} />
+          <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p3 }} />
+          <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p4 }} />
+          <p className="mb-2">
+            I’m open to get involved on different projects. Feel free to{" "}
             <a className=" text-blue-500 underline" href="#contact">
-              email
+              contact me.
             </a>
-            . Our links below
           </p>
           <ul className="flex">
             <li className="mr-3 hover:bg-orange-200">
@@ -47,11 +50,24 @@ const About = () => {
           <h4 className=" text-lg md:text-xl font-semibold mb-2 md:mb-4">
             My Interests:
           </h4>
-          <ul className="flex flex-col text-lg pl-3 md:pl-6">
-            <li className="list-disc list-inside">interest 1</li>
-            <li className="list-disc list-inside">interest 2</li>
-            <li className="list-disc list-inside">interest 3</li>
-            <li className="list-disc list-inside">interest 4</li>
+          <ul className="flex flex-col text-base pl-3 md:pl-6">
+            <li className="list-disc list-inside">
+              I love coding game-related subjects. programming{" "}
+              <b>Game Engines</b>, <b>AI</b>, <b>Graphics</b> are the most
+              interesting topics for me.
+            </li>
+            <li
+              className="list-disc list-inside"
+              dangerouslySetInnerHTML={{ __html: interests.i2 }}
+            />
+            <li
+              className="list-disc list-inside"
+              dangerouslySetInnerHTML={{ __html: interests.i3 }}
+            />
+            <li
+              className="list-disc list-inside"
+              dangerouslySetInnerHTML={{ __html: interests.i4 }}
+            />
           </ul>
         </div>
       </div>
