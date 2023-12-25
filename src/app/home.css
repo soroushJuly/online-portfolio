@@ -19,6 +19,9 @@
 .Section {
   padding: 25px 20px;
   @screen md {
+    padding: 35px 50px;
+  }
+  @screen lg {
     padding: 45px 160px;
   }
   width: 100%;
