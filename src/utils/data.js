@@ -97,6 +97,7 @@ export const projectList = [
     thumbnail: "/thumb-the-traveller.jpg",
     description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
     tags: ["Web"],
+    modal: "Ezreez",
   },
   {
     id: 5,

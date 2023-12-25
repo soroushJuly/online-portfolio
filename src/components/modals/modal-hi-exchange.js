@@ -2,7 +2,7 @@ import ModalFooter from "@/components/modals/modal-footer";
 import ModalHeader from "@/components/modals/modal-header";
 import Image from "next/image";
 
-const Bokeh = ({ onCloseClick }) => {
+const Hiexchange = ({ onCloseClick }) => {
   const link = "https://hi.exchange/";
   return (
     <>
@@ -67,4 +67,4 @@ const Bokeh = ({ onCloseClick }) => {
   );
 };
 
-export default Bokeh;
+export default Hiexchange;
