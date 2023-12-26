@@ -16,10 +16,12 @@ const About = () => {
           <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p4 }} />
           <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p5 }} />
           <p className="mb-2">
-            I’m open to getting involved in different projects. Feel free to{" "}
+            I am enthusiastically open to diverse projects. Please feel free
+            to&nbsp;
             <a className=" text-blue-500 underline" href="#contact">
-              contact me.
+              connect with me
             </a>
+            .
           </p>
           <ul className="flex">
             <li className="mr-3 hover:bg-orange-200">
@@ -53,9 +55,9 @@ const About = () => {
           </h4>
           <ul className="flex flex-col text-base pl-3 md:pl-6">
             <li className="list-disc list-inside">
-              I love coding game-related subjects. Programming{" "}
-              <b>Game Engines</b>, <b>AI</b>, and <b>Graphics</b> are appealing
-              topics to me.
+              I love coding game-related subjects. Topics like Programming{" "}
+              <b>Game Engines</b>, <b>AI</b>, and <b>Graphics</b> always catch
+              my attention.
             </li>
             <li
               className="list-disc list-inside"
