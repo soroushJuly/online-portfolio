@@ -128,7 +128,7 @@ export const projectList = [
     title: "EZREEZ",
     position: "Software Developer",
     date: "2020",
-    thumbnail: "/thumb-the-traveller.jpg",
+    thumbnail: "/thumb-ezreez.jpg",
     description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
     tags: ["Web"],
     modal: "Ezreez",

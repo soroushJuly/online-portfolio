@@ -17,7 +17,7 @@ const Ezreez = ({ onCloseClick }) => {
           <div className="Modal__body">
             <div className=" w-1/2 mx-auto">
               <Image
-                src="/ostadbank/01.png"
+                src="/ezreez/01.jpg"
                 alt="a screenshot of the ezreez website"
                 className="mx-auto"
                 sizes="100vw"
