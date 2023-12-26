@@ -18,7 +18,7 @@ const Bokeh = ({ onCloseClick }) => {
             <div className=" w-1/2 mx-auto">
               <Image
                 src="/bokeh/01.png"
-                alt="screenshot of the game"
+                alt="screenshot of the bokeh game"
                 className="mx-auto"
                 sizes="100vw"
                 style={{

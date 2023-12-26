@@ -17,7 +17,7 @@ const Traveller = ({ onCloseClick }) => {
             <div className=" w-1/2 mx-auto">
               <Image
                 src="/the-traveller/01.png"
-                alt="screenshot of the game"
+                alt="a screenshot of the traveller game"
                 className="mx-auto"
                 sizes="100vw"
                 style={{

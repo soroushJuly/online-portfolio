@@ -18,7 +18,7 @@ const Ezreez = ({ onCloseClick }) => {
             <div className=" w-1/2 mx-auto">
               <Image
                 src="/portfolio/01.png"
-                alt="screenshot of the online portfolio website"
+                alt="a screenshot of the online portfolio website"
                 className="mx-auto"
                 sizes="100vw"
                 style={{

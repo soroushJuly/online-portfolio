@@ -19,7 +19,7 @@ const Ostadbank = ({ onCloseClick }) => {
             <div className=" w-1/2 mx-auto">
               <Image
                 src="/ostadbank/01.png"
-                alt="screenshot of the game"
+                alt="a screenshot of the Ostadbank website"
                 className="mx-auto"
                 sizes="100vw"
                 style={{
