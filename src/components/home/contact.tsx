@@ -23,7 +23,7 @@ const  Contact: FC = () => {
   return (
     <section id="contact" className="Section flex flex-col md:grid md:grid-cols-2">
       <h3 className="Title col-span-2 h-min">Contact Me</h3>
-      <p className=" col-span-2 md:text-xl mb-6 text-center">I’ll be happy to help with any code or problems.</p>
+      {/* <p className=" col-span-2 md:text-xl mb-6 text-center">I’ll be happy to help.</p> */}
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4 md:mb-5">
           <label

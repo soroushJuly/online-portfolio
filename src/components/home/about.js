@@ -14,6 +14,7 @@ const About = () => {
           <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p2 }} />
           <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p3 }} />
           <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p4 }} />
+          <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p5 }} />
           <p className="mb-2">
             I’m open to get involved on different projects. Feel free to{" "}
             <a className=" text-blue-500 underline" href="#contact">

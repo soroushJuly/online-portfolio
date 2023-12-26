@@ -43,7 +43,9 @@ const Skills = () => {
     <section id="skills" className="Section Section--white">
       <h3 className="Title col-span-2 h-min">Technical Skills</h3>
       <p className="md:text-xl mb-2 text-center">
-        I always have the enthusiasm to learn more.
+        Here are some of the programming languanges that I frequantly use and
+        details about how experienced and proficient I am using them. I always
+        have the enthusiasm to learn more.
       </p>
       <h4 className=" text-xl md:text-3xl underline mb-2 mt-4 md:my-4">
         Programming languages:
@@ -51,9 +53,10 @@ const Skills = () => {
       <ul className=" Button-list flex md:text-xl font-semibold mb-2">
         {langListItems}
       </ul>
-      <p className=" border-2 rounded text-sm md:text-base border-gray-400 p-3">
-        {langs[activeLang].description}
-      </p>
+      <p
+        className=" border-2 rounded text-sm md:text-base border-gray-400 p-3"
+        dangerouslySetInnerHTML={{ __html: langs[activeLang].description }}
+      />
 
       <h4 className=" text-xl md:text-3xl underline mb-2 mt-4 md:my-4">
         Engines\Frameworks\Software Used Most Frequently:
@@ -61,9 +64,10 @@ const Skills = () => {
       <ul className=" Button-list flex flex-wrap md:text-xl font-semibold mb-2">
         {toolListItems}
       </ul>
-      <p className=" border-2 rounded text-sm md:text-base border-gray-400 p-3 mb-4">
-        {tools[activeTool].description}
-      </p>
+      <p
+        className=" border-2 rounded text-sm md:text-base border-gray-400 p-3 mb-4"
+        dangerouslySetInnerHTML={{ __html: tools[activeTool].description }}
+      />
     </section>
   );
 };
