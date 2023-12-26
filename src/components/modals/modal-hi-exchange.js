@@ -36,9 +36,10 @@ const Hiexchange = ({ onCloseClick }) => {
               </p>
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b> HiExchange is the name a web application that
-              I developed from scratch using Nuxt.js and Vue.js in 6 month. This
-              website is a safe place for digital currency exchange.&nbsp;
+              <b>Description:</b> HiExchange is the name of a web application
+              that I developed from scratch using Nuxt.js and Vue.js in 6
+              months. This website is a safe place for digital currency
+              exchange.&nbsp;
               <a href={link} target="blank" className=" text-sm text-blue-700">
                 Link to the website
               </a>
@@ -49,10 +50,10 @@ const Hiexchange = ({ onCloseClick }) => {
             <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
               <li>Worked in professional teams.</li>
               <li>
-                Handled <b>Restful APIs</b> on the client-side.
+                Handled <b>Restful APIs</b> on the client side.
               </li>
               <li>
-                Solved all the challenges through process of developing a
+                Solved all the challenges through the process of developing a
                 digital currency exchange platform.
               </li>
               <li>Managed time perfectly to meet the deadlines.</li>

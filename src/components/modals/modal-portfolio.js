@@ -38,9 +38,9 @@ const Ezreez = ({ onCloseClick }) => {
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
               <b>Description:</b> I put this project here because I wanted to
               test my abilities to learn a new framework. I developed this
-              website using React.js and Next.js. I have not work with any of
+              website using React.js and Next.js. I have not worked with any of
               these tools before. But, I managed to create a website with medium
-              complexity using these tools on a short period. And, I am happy
+              complexity using these tools in a short period. And, I am happy
               that I learned something new. <br /> My plan is to add a game
               written in JavaScript to this website.
             </p>
@@ -49,10 +49,10 @@ const Ezreez = ({ onCloseClick }) => {
             </span>
             <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
               <li>
-                Learned a new library and a new framework on a small time frame.
+                Learned a new library and a new framework in a small time frame.
               </li>
+              <li>Implemented a form.</li>
               <li>Implemented Modals.</li>
-              <li>Implemented Forms.</li>
             </ul>
           </div>
           <ModalFooter onCloseClick={onCloseClick} />

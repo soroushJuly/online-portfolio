@@ -57,7 +57,7 @@ const Ostadbank = ({ onCloseClick }) => {
               </li>
               <li>Worked in professional teams.</li>
               <li>
-                Handled <b>Restful APIs</b> on the client-side.
+                Handled <b>Restful APIs</b> on the client side.
               </li>
               <li>Managed time perfectly to meet the deadlines.</li>
               <li>Optimized the code for the best performance.</li>

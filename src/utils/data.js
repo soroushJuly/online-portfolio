@@ -4,13 +4,13 @@ export const langs = [
   {
     id: 0,
     name: "C/C++",
-    description: `<b>My level:</b> Advanced <br />I learned <b>C</b> during my bachelors at Tehran University on 2015.
-     I created a simple pacman game with only C as the final project. <br /> During Electronic Systems Object-Oriented Simulations module 
-     I used <b>C++</b> to create an application to distinguish obejcts from eachother on 2019. On March 2023, I finished a Udemy course called 
-     "The Unreal Arsenal: Learn C++ and Unreal Engine" in which I learned intermediate and advanced subjects about C++ and also code a project 
-     in C++ in Unreal Engine. I also finished a module during my masters called "Object-Oriented Programming in C++". In this module, I reviewed
-      all the important topics in C++ and object oriented programming. Also, in Advanced Games Technology module I code a complete level of a game
-      only using C++. I coded 3D math problems using C++. I feel pretty confident code in C++.
+    description: `<b>My level:</b> Advanced <br />I learned <b>C</b> during my bachelor's at Tehran University in 2015.
+     I created a simple Pacman game with only C as the final project. <br /> During the Electronic Systems Object-Oriented Simulations module, 
+     I used <b>C++</b> to create an application to distinguish objects from each other in 2019. In March 2023, I finished a Udemy course called 
+     "The Unreal Arsenal: Learn C++ and Unreal Engine" in which I learned intermediate and advanced subjects about C++ and also coded a project 
+     in C++ in Unreal Engine. I also finished a module during my master's called "Object-Oriented Programming in C++". In this module, I reviewed
+      all the important topics in C++ and object-oriented programming. Also, in the Advanced Games Technology module, I code a complete level of a game
+      only using C++. I coded 3D math problems using C++. I feel pretty confident coding in C++.
      `,
   },
 
@@ -25,8 +25,8 @@ export const langs = [
   {
     id: 2,
     name: "Python",
-    description: `<b>My level:</b> Beginner <br /> I have used Python several times during my time at university. I feel I can code python easily since it is easier 
-  than C++ and JavaScript and since I now the Basics.`,
+    description: `<b>My level:</b> Beginner <br /> I have used Python several times during my time at university. I feel I can code Python easily since it is easier 
+  than C++ and JavaScript and since I know the Basics.`,
   },
 ];
 
@@ -34,27 +34,27 @@ export const tools = [
   {
     id: 0,
     name: "Unreal Engine",
-    description: `<b>My level:</b> Intermediate <br /> I've made several games with Unreal Engine some of them were learning-based projects
-    and one of them was my final project for one of my university modules. I'm comfortable with using Unreal for game development and I'm familiar
-    with the editor and blueprints. And, I've also built a game using mostly C++ in Unreal.`,
+    description: `<b>My level:</b> Intermediate <br /> I've made several games with Unreal Engine. Some were learning-based projects
+    and one was my final project for one of my university modules. I'm comfortable with using Unreal for game development and I'm familiar
+    with the editor and blueprints. Also, I've built a game using mostly C++ in Unreal.`,
   },
   {
     id: 1,
     name: "Linux",
-    description: `<b>My level:</b> Professional <br /> I've worked with linux in two different company and during several modules at university
-    so i'm confident enough working with it professionaly`,
+    description: `<b>My level:</b> Professional <br /> I've worked with Linux in two different companies and during several modules at university
+    so I'm confident enough to work with it professionally.`,
   },
   {
     id: 2,
     name: "Git",
     description: `<b>My level:</b> Advanced <br /> I've used git to control and versioning in almost all the projects that I've worked on.
-    I know the gitflow and how to work in teams. Also, I know essential commands to use git.`,
+    I know the GitFlow and how to work in teams. Also, I know essential commands to use git.`,
   },
   {
     id: 3,
     name: "Vue & React",
     description: `<b>My level:</b> vue.js: Advanced | react.js: beginner <br /> I've worked with vue.js and nuxt.js for 3 years and I feel
-    confident using them. Also, I learned about react recently, and made this website using it.`,
+    confident using them. Also, I learned about React recently and made this website using it.`,
   },
 ];
 

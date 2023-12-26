@@ -37,10 +37,10 @@ const Ezreez = ({ onCloseClick }) => {
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
               <b>Description:</b> Ezreez was a platform to facilitate the
-              process of transfering money abroad. I developed everything from
-              scratch. I implemented landing pages and the dashboard for the
-              users to work and managee their money with it. I used Vue.js &
-              Nuxt.js in this project.&nbsp;
+              process of transferring money abroad. I developed everything from
+              scratch. I implemented landing pages and a dashboard for the users
+              to work and manage their money with. I used Vue.js & Nuxt.js in
+              this project.&nbsp;
             </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
@@ -49,7 +49,7 @@ const Ezreez = ({ onCloseClick }) => {
               <li>Developed a complete web application from scratch.</li>
               <li>Worked on a professional project.</li>
               <li>
-                Handled <b>Restful APIs</b> on the client-side.
+                Handled <b>Restful APIs</b> on the client side.
               </li>
               <li>Optimized the code for the best performance.</li>
             </ul>

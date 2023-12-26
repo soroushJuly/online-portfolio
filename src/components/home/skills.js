@@ -43,7 +43,7 @@ const Skills = () => {
     <section id="skills" className="Section Section--white">
       <h3 className="Title col-span-2 h-min">Technical Skills</h3>
       <p className="md:text-xl mb-2 text-center">
-        Here are some of the programming languanges that I frequantly use and
+        Here are some of the programming languages that I frequently use and
         details about how experienced and proficient I am using them. I always
         have the enthusiasm to learn more.
       </p>
