@@ -28,7 +28,7 @@
 }
 
 .Section--white {
-  background-color: white;
+  @apply bg-white;
 }
 
 .Section .Title {
