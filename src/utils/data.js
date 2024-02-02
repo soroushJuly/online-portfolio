@@ -86,6 +86,7 @@ export const tagList = [
   { id: 2, name: "AI" },
   { id: 3, name: "Graphics" },
   { id: 4, name: "Unreal" },
+  { id: 5, name: "Game Jam" },
 ];
 export const projectList = [
   {
@@ -147,5 +148,25 @@ export const projectList = [
     description: "JavaScript | React.js | Next.js | HTML | CSS",
     tags: ["Web"],
     modal: "Portfolio",
+  },
+  {
+    id: 6,
+    title: "Cat with a Vengence",
+    position: "Gameplay/UI Programmer",
+    date: "2024",
+    thumbnail: "/thumb-cat.png",
+    description: "Unreal | Blueprints | Gameplay | UI",
+    tags: ["Game", "Unreal", "c++", "Blueprints", "Game Jam"],
+    modal: "CatGame",
+  },
+  {
+    id: 7,
+    title: "Warrior",
+    position: "Game Programmer",
+    date: "2024",
+    thumbnail: "/thumb-cat.png",
+    description: "Unreal | AI | Gameplay | UI",
+    tags: ["Game", "Unreal", "c++", "Blueprints"],
+    modal: "Warrior",
   },
 ];
