@@ -36,11 +36,12 @@ const Warrior = ({ onCloseClick }) => {
               </p>
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b> This a Third-person action RPG game in
-              prgoress. Unreal engine is used to create this game. game is being
-              created by only writing C++ and blueprints are not corporated as
-              much as possible. This game is a big presonal project and has all
-              aspects of a AAA game.
+              <b>Description:</b> This a Third-person action RPG game still in
+              prgoress. Unreal engine is used to create this game. The game is
+              being created by only writing C++ (blueprints not corporated as
+              much as possible). This game is a big presonal project and has all
+              aspects of a AAA game, also, I will be comfortable with ins and
+              outs
             </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}

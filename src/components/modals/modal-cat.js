@@ -57,11 +57,11 @@ const Cat = ({ onCloseClick }) => {
               </p>
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b> Cat with a vengence is the name of the game
-              that I participated to create during global game jam 2024. From
+              <b>Description:</b> Cat with a Vengence is the name of the game
+              that I participated in creating during Global Game Jam 2024. From
               idea generation to UI and gameplay programming. I worked in a team
-              of six people to create this indie game just three days. We used
-              Unreal engine and mostly blueprints.
+              of six people to create this indie game in just three days. We
+              used Unreal Engine and mostly blueprints.
             </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
@@ -74,8 +74,8 @@ const Cat = ({ onCloseClick }) => {
                 Developed a lively HUD using the <b>UMG UI</b> system in Unreal
                 Engine.
               </li>
-              <li>Worked with fracture system in Unreal Engine.</li>
-              <li>Worked with animation system in Unreal Engine.</li>
+              <li>Worked with the fracture system in Unreal Engine.</li>
+              <li>Worked with the animation system in Unreal Engine.</li>
             </ul>
           </div>
           <ModalFooter onCloseClick={onCloseClick} />
