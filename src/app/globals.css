@@ -48,3 +48,7 @@ html {
   max-height: calc(100vh - 200px);
   @apply relative p-6 flex-auto overflow-y-auto;
 }
+
+.Modal__body__image-container {
+  @apply w-full md:w-1/2 mx-auto;
+}

@@ -14,7 +14,7 @@ const Traveller = ({ onCloseClick }) => {
           />
           {/*body*/}
           <div className="Modal__body">
-            <div className=" w-1/2 mx-auto">
+            <div className="Modal__body__image-container">
               <Image
                 src="/the-traveller/01.png"
                 alt="a screenshot of the traveller game"

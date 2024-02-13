@@ -15,7 +15,7 @@ const Cat = ({ onCloseClick }) => {
           />
           {/*body*/}
           <div className="Modal__body">
-            <div className=" w-1/2 mx-auto">
+            <div className="Modal__body__image-container">
               <Image
                 src="/cat/01.png"
                 alt="screenshot of the bokeh game"

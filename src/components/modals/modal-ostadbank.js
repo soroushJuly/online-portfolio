@@ -16,7 +16,7 @@ const Ostadbank = ({ onCloseClick }) => {
           />
           {/*body*/}
           <div className="Modal__body">
-            <div className=" w-1/2 mx-auto">
+            <div className="Modal__body__image-container">
               <Image
                 src="/ostadbank/01.png"
                 alt="a screenshot of the Ostadbank website"

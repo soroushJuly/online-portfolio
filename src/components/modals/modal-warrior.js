@@ -15,9 +15,9 @@ const Warrior = ({ onCloseClick }) => {
           />
           {/*body*/}
           <div className="Modal__body">
-            <div className=" w-1/2 mx-auto">
+            <div className="Modal__body__image-container">
               <Image
-                src="/bokeh/01.png"
+                src="/warrior/01.png"
                 alt="screenshot of the bokeh game"
                 className="mx-auto"
                 sizes="100vw"

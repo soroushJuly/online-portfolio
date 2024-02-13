@@ -15,7 +15,7 @@ const Ezreez = ({ onCloseClick }) => {
           />
           {/*body*/}
           <div className="Modal__body">
-            <div className=" w-1/2 mx-auto">
+            <div className="Modal__body__image-container">
               <Image
                 src="/ezreez/01.jpg"
                 alt="a screenshot of the ezreez website"

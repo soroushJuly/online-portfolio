@@ -164,7 +164,7 @@ export const projectList = [
     title: "Warrior",
     position: "Game Programmer",
     date: "2024",
-    thumbnail: "/thumb-cat.png",
+    thumbnail: "/thumb-warrior.jpg",
     description: "Unreal | AI | Gameplay | UI",
     tags: ["Game", "Unreal", "c++", "Blueprints"],
     modal: "Warrior",
