@@ -6,6 +6,7 @@ import Ezreez from "@/components/modals/modal-ezreez";
 import Portfolio from "@/components/modals/modal-portfolio";
 import CatGame from "@/components/modals/modal-cat";
 import Warrior from "@/components/modals/modal-warrior";
+import Monsterfall from "@/components/modals/modal-monsterfall";
 // import { projectList } from "@/utils/data";
 
 export default function Modal({ activeModal, isShowModal, onCloseClick }) {
@@ -27,6 +28,8 @@ export default function Modal({ activeModal, isShowModal, onCloseClick }) {
         return <CatGame onCloseClick={onCloseClick} />;
       case "Warrior":
         return <Warrior onCloseClick={onCloseClick} />;
+      case "Monsterfall":
+        return <Monsterfall onCloseClick={onCloseClick} />;
         break;
 
       default:

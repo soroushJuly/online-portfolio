@@ -169,4 +169,14 @@ export const projectList = [
     tags: ["Game", "Unreal", "c++", "Blueprints"],
     modal: "Warrior",
   },
+  {
+    id: 8,
+    title: "Warrior",
+    position: "Game Programmer",
+    date: "2024",
+    thumbnail: "/thumb-monsterfall.png",
+    description: " AI | Gameplay | UI",
+    tags: ["Game", "c#", "Monogame", "AI"],
+    modal: "Monsterfall",
+  },
 ];

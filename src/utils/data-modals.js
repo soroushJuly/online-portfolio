@@ -21,3 +21,8 @@ export const warriorData = {
   title: `Warrior`,
   position: "Game Programmer",
 };
+
+export const monsterfall = {
+  title: `Monsterfall`,
+  position: "Game Programmer | Game Designer",
+};

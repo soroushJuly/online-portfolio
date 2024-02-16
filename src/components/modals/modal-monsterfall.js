@@ -1,23 +1,23 @@
 import ModalFooter from "@/components/modals/modal-footer";
 import ModalHeader from "@/components/modals/modal-header";
 import Image from "next/image";
-import { warriorData } from "@/utils/data-modals";
+import { monsterfall } from "@/utils/data-modals";
 
-const Warrior = ({ onCloseClick }) => {
+const Monsterfall = ({ onCloseClick }) => {
   return (
     <>
       <div className="Modal">
         <div className="Modal__content">
           <ModalHeader
-            title={warriorData.title}
-            position={warriorData.position}
+            title={monsterfall.title}
+            position={monsterfall.position}
             onCloseClick={onCloseClick}
           />
           {/*body*/}
           <div className="Modal__body">
             <div className="Modal__body__image-container">
               <Image
-                src="/warrior/01.png"
+                src="/monsterfall/01.png"
                 alt="screenshot of the bokeh game"
                 className="mx-auto"
                 sizes="100vw"
@@ -29,29 +29,30 @@ const Warrior = ({ onCloseClick }) => {
                 height={150}
               />
               <p>
-                <b>Date: </b>2023 - present
+                <b>Date: </b>2024 - present
               </p>
               <p>
-                <b>Duration: </b>3 months and going
+                <b>Duration: </b>1 months and going
               </p>
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b> This a Third-person action RPG game still in
-              prgoress. Unreal engine is used to create this game. The game is
-              being created by only writing C++ (blueprints not corporated as
-              much as possible). This game is a big presonal project and has all
-              aspects of a AAA game, also, I will be comfortable with ins and
-              outs
+              <b>Description:</b> Monsterfall is an isometric RPG 2D game that I
+              developed during studying the Computer Games Architecture. I
+              leveraged monogame to create this game. I tried to incorporate
+              best practices developing this game, like using neat programming
+              patterns like: singleton pattern, data-driven design, etc.
             </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>
             <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
               <li>
-                Created an enviroment using Unreal features like landscape and
-                foliage.
+                Implemented event-driven design for input binding and other
+                events like sounds in the game.
               </li>
-              {/* <li dangerouslySetInnerHTML={{ __html: bokeh.f1 }}></li> */}
+              <li>Implemented data-driven design.</li>
+              <li>MVC</li>
+              <li>singleton pattern</li>
             </ul>
           </div>
           <ModalFooter onCloseClick={onCloseClick} />
@@ -62,4 +63,4 @@ const Warrior = ({ onCloseClick }) => {
   );
 };
 
-export default Warrior;
+export default Monsterfall;
