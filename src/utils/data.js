@@ -87,6 +87,7 @@ export const tagList = [
   { id: 3, name: "Graphics" },
   { id: 4, name: "Unreal" },
   { id: 5, name: "Game Jam" },
+  { id: 6, name: "Game Engine" },
 ];
 export const projectList = [
   {
@@ -171,12 +172,12 @@ export const projectList = [
   },
   {
     id: 8,
-    title: "Warrior",
+    title: "Monsterfall",
     position: "Game Programmer",
     date: "2024",
     thumbnail: "/thumb-monsterfall.png",
-    description: " AI | Gameplay | UI",
-    tags: ["Game", "c#", "Monogame", "AI"],
+    description: "Engine | Gameplay | AI | UI",
+    tags: ["Game Engine", "Game", "c#", "Monogame", "AI"],
     modal: "Monsterfall",
   },
 ];

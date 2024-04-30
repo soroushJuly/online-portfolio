@@ -25,4 +25,8 @@ export const warriorData = {
 export const monsterfall = {
   title: `Monsterfall`,
   position: "Game Programmer | Game Designer",
+  download: `Download the game's executable`,
+  github: `Link to the game's Github Repository`,
+  linkDownload: `https://drive.google.com/file/d/1mT8YHT4CHTT3_G3KqWN_piI6pDnxp7wL/view?usp=sharing`,
+  linkToGithub: `https://github.com/soroushJuly/Monsterfall_01`,
 };
