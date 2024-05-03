@@ -30,3 +30,11 @@ export const monsterfall = {
   linkDownload: `https://drive.google.com/file/d/1mT8YHT4CHTT3_G3KqWN_piI6pDnxp7wL/view?usp=sharing`,
   linkToGithub: `https://github.com/soroushJuly/Monsterfall_01`,
 };
+export const rally = {
+  title: `Rally Sahara`,
+  position: "Game Programmer | Game Designer",
+  download: `Download the game's executable`,
+  github: `Code parts available on request`,
+  linkDownload: `https://drive.google.com/file/d/1mT8YHT4CHTT3_G3KqWN_piI6pDnxp7wL/view?usp=sharing`,
+  linkToGithub: ``,
+};

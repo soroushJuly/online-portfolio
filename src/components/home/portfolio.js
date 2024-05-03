@@ -97,7 +97,7 @@ const Portfolio = () => {
       <ul className="flex flex-wrap justify-center mb-4 md:mb-6">
         {tagListItems}
       </ul>
-      <ul className="flex flex-wrap">{projectListItems}</ul>
+      <ul className="flex flex-wrap justify-center">{projectListItems}</ul>
     </section>
   );
 };

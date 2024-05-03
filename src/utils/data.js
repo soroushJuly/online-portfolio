@@ -88,6 +88,8 @@ export const tagList = [
   { id: 4, name: "Unreal" },
   { id: 5, name: "Game Jam" },
   { id: 6, name: "Game Engine" },
+  { id: 7, name: "c++" },
+  { id: 8, name: "c#" },
 ];
 export const projectList = [
   {
@@ -179,5 +181,15 @@ export const projectList = [
     description: "Engine | Gameplay | AI | UI",
     tags: ["Game Engine", "Game", "c#", "Monogame", "AI"],
     modal: "Monsterfall",
+  },
+  {
+    id: 9,
+    title: "Rally Sahara",
+    position: "Game Programmer",
+    date: "2024",
+    thumbnail: "/thumb-rally.jpg",
+    description: "Engine | Graphics | OpenGL | Gameplay",
+    tags: ["Game Engine", "Graphics", "c++", "OpenGL", "Gameplay"],
+    modal: "Rally",
   },
 ];
