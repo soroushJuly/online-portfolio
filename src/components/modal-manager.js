@@ -8,6 +8,7 @@ import CatGame from "@/components/modals/modal-cat";
 import Warrior from "@/components/modals/modal-warrior";
 import Monsterfall from "@/components/modals/modal-monsterfall";
 import Rally from "@/components/modals/modal-rally"
+import SonOfPersia from "@/components/modals/modal-son-of-persian"
 // import { projectList } from "@/utils/data";
 
 export default function Modal({ activeModal, isShowModal, onCloseClick }) {
@@ -33,6 +34,8 @@ export default function Modal({ activeModal, isShowModal, onCloseClick }) {
         return <Monsterfall onCloseClick={onCloseClick} />;
       case "Rally":
         return <Rally onCloseClick={onCloseClick} />;
+      case "SonOfPersia":
+        return <SonOfPersia onCloseClick={onCloseClick} />;
         break;
 
       default:

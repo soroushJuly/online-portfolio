@@ -192,4 +192,14 @@ export const projectList = [
     tags: ["Game Engine", "Graphics", "c++", "OpenGL", "Gameplay"],
     modal: "Rally",
   },
+  {
+    id: 10,
+    title: "Son of Persia",
+    position: "Game Programmer | Game Designer",
+    date: "2024",
+    thumbnail: "/thumb-persia.png",
+    description: "Game | Unity | VR | Meta Quest",
+    tags: ["Game", "Unity", "c#", "VR"],
+    modal: "SonOfPersia",
+  },
 ];

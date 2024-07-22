@@ -38,3 +38,11 @@ export const rally = {
   linkDownload: `https://drive.google.com/file/d/1XlFD-InX2NApGDdAkFZmNy2z-1cXhGtt/view?usp=drive_link`,
   linkToGithub: ``,
 };
+export const persia = {
+  title: `Son Of Persia`,
+  position: "Game Programmer | Game Designer",
+  download: `Download the game's executable`,
+  github: `Link to the game's Github Repository`,
+  linkDownload: `https://drive.google.com/file/d/1MD0fU1NZUd52YRxZMFtjVnP1vHM9z8i7/view?usp=sharing`,
+  linkToGithub: `https://github.com/soroushJuly/Son-of-persia-VR`,
+};
