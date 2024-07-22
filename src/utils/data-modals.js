@@ -35,6 +35,6 @@ export const rally = {
   position: "Game Programmer | Game Designer",
   download: `Download the game's executable`,
   github: `Code parts available on request`,
-  linkDownload: `https://drive.google.com/file/d/1mT8YHT4CHTT3_G3KqWN_piI6pDnxp7wL/view?usp=sharing`,
+  linkDownload: `https://drive.google.com/file/d/1XlFD-InX2NApGDdAkFZmNy2z-1cXhGtt/view?usp=drive_link`,
   linkToGithub: ``,
 };
