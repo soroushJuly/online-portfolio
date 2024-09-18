@@ -7,14 +7,15 @@ export default function EndlessRunnerEngine() {
         <h2 className="text-xl mb-16 font-bold">A no-code game engine to make endless runner games</h2>
         <div>
         <p className='float-left mr-4'>Download the application (Windows):</p>
-        <a href="" className='float-left text-blue-600 underline'>Download</a>
+        <a target='_blank' href="https://github.com/soroushJuly/MonoEditorEndless/archive/refs/heads/master.zip" className='float-left text-blue-600 underline'>Download</a>
         </div>
         <div>
 
         <p className='float-left mr-4'>Download assets:</p>
-        <a href="" className='float-left underline text-blue-600'>Download</a>
+        <a target='_blank' href="https://drive.google.com/uc?export=download&id=17XYjVFfAIciibl_IbywaxChAgDISUUbN" className='float-left underline text-blue-600'>Download</a>
         </div>
         <div>
+        
 
         <p className='float-left mr-4'>Download questionnaire:</p>
         <a target='_blank' href="https://drive.google.com/uc?export=download&id=1pKJhkq53Y59LEDqVMIolykRSGevGvPHN" className='float-left underline text-blue-600'>Download</a>
