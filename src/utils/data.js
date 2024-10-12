@@ -61,7 +61,7 @@ export const tools = [
 // -------------------- About -------------------- //
 export const about = {
   p1: "Hi there!",
-  p2: `I'm Soroush, and I absolutely <b>love programming</b>. I enjoy <b>solving problems</b> and spending hours coding. 
+  p2: `I'm Soroush, and I <b>love programming</b>. I enjoy <b>solving problems</b> and spending hours coding. 
   I pay <b>close attention to details</b> and love seeing the cool apps I create. I know a bunch of programming languages,
   but I mainly focus on <b>C++/C#</b>, <b>JavaScript</b>, and sometimes <b>Python</b>. Learning new things in this field is something I'll always do.`,
   p3: `With over <b>three years</b> of professional experience as a <b>software engineer</b>—embracing both employment and freelance endeavors—my focus
@@ -69,7 +69,7 @@ export const about = {
     Also, I've collaborated within teams and showcased effective communication skills. 
 `,
   p4: "My proficiency in the <b>Unreal Engine</b>, acquired through university education and self-guided learning, has culminated in the creation of diverse games.",
-  p5: "I completed my bachelor's in Electrical Engineering in 2019, and now I'm studying <b>Master's in Computer Games Technology</b> with an expected finish date in 2024",
+  p5: "I completed my bachelor's in Electrical Engineering in 2019, and I graduated from my <b>Master's in Computer Games Technology</b> with a distinction in late 2024",
   p6: "a software engineer eager about game development. I worked as a software engineer in different teams in the tech industry for about 2 years. I’m currently studying for a master’s in computer games technology with an expected end date of August 2024. The focus of my course is on C++ programming and learning the essential math skills to build high-quality games, I’ve also completed an in-depth Udemy course on C++ and Unreal engine, therefore I have a robust understanding of C++. Based on my experience I can learn new programming languages fast and can easily understand and work on top of others’ codes. Also, I’m comfortable using company-specific engines to build a game as I did in my course. On top of that, I’m working on the game engine  we used at the university and improving it. I have had a passion  for games from a young age and Now I can’t wait to face new challenges in game programming.",
 };
 
@@ -201,5 +201,15 @@ export const projectList = [
     description: "Game | Unity | VR | Meta Quest",
     tags: ["Game", "Unity", "c#", "VR"],
     modal: "SonOfPersia",
+  },
+  {
+    id: 11,
+    title: "Space Connector",
+    position: "Game Programmer | Game Designer",
+    date: "2024",
+    thumbnail: "/thumb-space.jpg",
+    description: "Game | Unity | C#",
+    tags: ["Game", "Unity", "c#", "Game Jam"],
+    modal: "SpaceConnector",
   },
 ];

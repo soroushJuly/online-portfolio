@@ -9,6 +9,7 @@ import Warrior from "@/components/modals/modal-warrior";
 import Monsterfall from "@/components/modals/modal-monsterfall";
 import Rally from "@/components/modals/modal-rally"
 import SonOfPersia from "@/components/modals/modal-son-of-persian"
+import SpaceConnector from "@/components/modals/modal-space-connector"
 // import { projectList } from "@/utils/data";
 
 export default function Modal({ activeModal, isShowModal, onCloseClick }) {
@@ -36,6 +37,8 @@ export default function Modal({ activeModal, isShowModal, onCloseClick }) {
         return <Rally onCloseClick={onCloseClick} />;
       case "SonOfPersia":
         return <SonOfPersia onCloseClick={onCloseClick} />;
+      case "SpaceConnector":
+        return <SpaceConnector onCloseClick={onCloseClick} />;
         break;
 
       default:

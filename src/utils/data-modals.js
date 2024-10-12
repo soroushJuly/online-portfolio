@@ -46,3 +46,11 @@ export const persia = {
   linkDownload: `https://drive.google.com/file/d/1MD0fU1NZUd52YRxZMFtjVnP1vHM9z8i7/view?usp=sharing`,
   linkToGithub: `https://github.com/soroushJuly/Son-of-persia-VR`,
 };
+export const spaceConnectorData = {
+  title: `Space Connector`,
+  position: "Game Programmer | Game Designer",
+  download: `Download the game's executable`,
+  github: `Link to the game's Github Repository`,
+  linkDownload: `https://soroushjuly.itch.io/space-connectors`,
+  linkToGithub: `https://github.com/Shantanu-Bhatt-K/KenneyGameJam/tree/NodeStructure`,
+};
