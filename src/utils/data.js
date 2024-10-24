@@ -60,15 +60,14 @@ export const tools = [
 
 // -------------------- About -------------------- //
 export const about = {
-  p1: "Hi there!",
-  p2: `I'm Soroush, and I <b>love programming</b>. I enjoy <b>solving problems</b> and spending hours coding. 
-  I pay <b>close attention to details</b> and love seeing the cool apps I create. I know a bunch of programming languages,
-  but I mainly focus on <b>C++/C#</b>, <b>JavaScript</b>, and sometimes <b>Python</b>. Learning new things in this field is something I'll always do.`,
-  p3: `With over <b>three years</b> of professional experience as a <b>software engineer</b>—embracing both employment and freelance endeavors—my focus
-   was centered on web application development. Concurrently, I've pursued my passion for <b>game programming</b>.
-    Also, I've collaborated within teams and showcased effective communication skills. 
+  p1: `Hi there! It's Soroush.`,
+  p2: `I enjoy <b>problem-solving</b> and spending hours coding, always paying <b>close attention to detail</b> in the apps I create.
+  My primary focus is on <b>C++/C#</b>, <b>JavaScript</b>, and occasionally <b>Python</b>. 
+  Learning new things in this field is something I'll always do.`,
+  p3: `With over <b>three years</b> of professional experience as a <b>software engineer</b> my focus
+   was centered on <b>web application</b> and <b>game development</b>. I've also collaborated within teams and showcased effective communication skills. 
 `,
-  p4: "My proficiency in the <b>Unreal Engine</b>, acquired through university education and self-guided learning, has culminated in the creation of diverse games.",
+  p4: "",
   p5: "I completed my bachelor's in Electrical Engineering in 2019, and I graduated from my <b>Master's in Computer Games Technology</b> with a distinction in late 2024",
   p6: "a software engineer eager about game development. I worked as a software engineer in different teams in the tech industry for about 2 years. I’m currently studying for a master’s in computer games technology with an expected end date of August 2024. The focus of my course is on C++ programming and learning the essential math skills to build high-quality games, I’ve also completed an in-depth Udemy course on C++ and Unreal engine, therefore I have a robust understanding of C++. Based on my experience I can learn new programming languages fast and can easily understand and work on top of others’ codes. Also, I’m comfortable using company-specific engines to build a game as I did in my course. On top of that, I’m working on the game engine  we used at the university and improving it. I have had a passion  for games from a young age and Now I can’t wait to face new challenges in game programming.",
 };
