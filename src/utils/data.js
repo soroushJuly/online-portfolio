@@ -65,10 +65,10 @@ export const about = {
   My primary focus is on <b>C++/C#</b>, <b>JavaScript</b>, and occasionally <b>Python</b>. 
   Learning new things in this field is something I'll always do.`,
   p3: `With over <b>three years</b> of professional experience as a <b>software engineer</b> my focus
-   was centered on <b>web application</b> and <b>game development</b>. I've also collaborated within teams and showcased effective communication skills. 
+   was centered on <b>web</b> and <b>game</b> applications. I've also collaborated within teams and showcased effective communication skills. 
 `,
   p4: "",
-  p5: "I completed my bachelor's in Electrical Engineering in 2019, and I graduated from my <b>Master's in Computer Games Technology</b> with a distinction in late 2024",
+  p5: "I completed my bachelor's in Electrical Engineering in 2019, and I graduated from my <b>Master's in Computer Games Technology</b> with a distinction in 2024.",
   p6: "a software engineer eager about game development. I worked as a software engineer in different teams in the tech industry for about 2 years. I’m currently studying for a master’s in computer games technology with an expected end date of August 2024. The focus of my course is on C++ programming and learning the essential math skills to build high-quality games, I’ve also completed an in-depth Udemy course on C++ and Unreal engine, therefore I have a robust understanding of C++. Based on my experience I can learn new programming languages fast and can easily understand and work on top of others’ codes. Also, I’m comfortable using company-specific engines to build a game as I did in my course. On top of that, I’m working on the game engine  we used at the university and improving it. I have had a passion  for games from a young age and Now I can’t wait to face new challenges in game programming.",
 };
 
