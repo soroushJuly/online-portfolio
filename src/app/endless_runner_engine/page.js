@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import "./endless-page.css";
 
 export default function EndlessRunnerEngine() {
   return (

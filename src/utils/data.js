@@ -211,4 +211,14 @@ export const projectList = [
     tags: ["Game", "Unity", "c#", "Game Jam"],
     modal: "SpaceConnector",
   },
+  {
+    id: 12,
+    title: "MonoEndlessRunner",
+    position: "Designer and Game Programmer",
+    date: "2024",
+    thumbnail: "/thumb-endless.png",
+    description: "Game Engine | C#",
+    tags: ["Game", "Game Engine", "c#", "Tools"],
+    modal: "EndlessRunner",
+  },
 ];
