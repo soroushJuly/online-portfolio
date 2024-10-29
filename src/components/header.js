@@ -29,7 +29,7 @@ const Header = () => {
     <header className="app-header flex p-2 md:p-6 text-center text-white justify-between">
       {/* <Logo></Logo> */}
       <div className=" pr-8 sm:pr-14 md:pr-80 text-sm md:text-lg lg:text-2xl">
-        Soroush Jolai
+        <Link href="/">Soroush Jolai</Link>
       </div>
       <nav>
         <ul className="flex md:text-lg lg:text-2xl">
