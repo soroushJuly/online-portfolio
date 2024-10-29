@@ -5,14 +5,13 @@ import { useForm } from "react-hook-form";
 import { sendEmail } from "@/utils/send-email";
 import Image from "next/image";
 
-
 export type FormData = {
-  name: string,
-  email: string,
-  message: string,
+  name: string;
+  email: string;
+  message: string;
 };
 
-const  Contact: FC = () => {
+const Contact: FC = () => {
   const { register, handleSubmit } = useForm();
   const pp = process.env.MY_EMAIL;
 
@@ -21,7 +20,10 @@ const  Contact: FC = () => {
   }
 
   return (
-    <section id="contact" className="Section flex flex-col md:grid md:grid-cols-2">
+    <section
+      id="contact"
+      className="Section flex flex-col md:grid md:grid-cols-2"
+    >
       <h3 className="Title col-span-2 h-min">Contact Me</h3>
       {/* <p className=" col-span-2 md:text-xl mb-6 text-center">I’ll be happy to help.</p> */}
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -82,22 +84,35 @@ const  Contact: FC = () => {
           <h4 className=" text-xl md:text-2xl underline mb-3">Links:</h4>
           <ul className="flex">
             <li className="mr-3 hover:bg-orange-200">
-              <a href="http://www.linkedin.com/in/soroush-july-jolai" target="blank">
-                <Image alt="LinkedIn Icon" width="50" height="50" src="/linkedin.svg" className="w" />
+              <a
+                href="http://www.linkedin.com/in/soroush-july-jolai"
+                target="blank"
+              >
+                <Image
+                  alt="LinkedIn Icon"
+                  width="50"
+                  height="50"
+                  src="/linkedin.svg"
+                  className="w"
+                />
               </a>
             </li>
             <li className="hover:bg-orange-200 rounded-full">
               <a href="https://github.com/soroushJuly" target="blank">
-                <Image alt="Github Icon" width="50" height="50" src="/github.svg" />
+                <Image
+                  alt="Github Icon"
+                  width="50"
+                  height="50"
+                  src="/github.svg"
+                />
               </a>
             </li>
           </ul>
-
         </div>
         {/* <div>TODO: Download resume</div> */}
       </div>
     </section>
   );
-}
+};
 
 export default Contact;

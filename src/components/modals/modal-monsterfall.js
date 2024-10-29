@@ -1,6 +1,6 @@
 import ModalFooter from "@/components/modals/modal-footer";
 import ModalHeader from "@/components/modals/modal-header";
-import EmbedYoutube from "@/components/embed-youtube"
+import EmbedYoutube from "@/components/embed-youtube";
 import Image from "next/image";
 import { monsterfall } from "@/utils/data-modals";
 
@@ -54,26 +54,38 @@ const Monsterfall = ({ onCloseClick }) => {
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
               <b>Description:</b> Monsterfall is an isometric RPG 2D game that I
-              developed during the Computer Games Architecture class. I developed a simple engine using monogame framework 
-              and then leveraging that engine, I created this game. I tried to incorporate
-              best practices developing the engine and the game, for instance I used programming
-              patterns like: singleton pattern, data-driven design, etc.
+              developed during the Computer Games Architecture class. I
+              developed a simple engine using monogame framework and then
+              leveraging that engine, I created this game. I tried to
+              incorporate best practices developing the engine and the game, for
+              instance I used programming patterns like: singleton pattern,
+              data-driven design, etc.
             </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>
             <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
               <li>
-                Implemented <b>event-driven</b> design for input binding and other
-                events like sounds in the game. (<b>Observer Pattern</b>)
+                Implemented <b>event-driven</b> design for input binding and
+                other events like sounds in the game. (<b>Observer Pattern</b>)
               </li>
-              <li>Implemented <b>data-driven</b> design.</li>
+              <li>
+                Implemented <b>data-driven</b> design.
+              </li>
               <li>MVC architecture</li>
               Patterns used:
-              <li><b>Singleton Pattern</b></li>
-              <li><b>Facade Pattern</b></li>
-              <li><b>Composite Pattern</b></li>
-              <li><b>State Pattern</b></li>
+              <li>
+                <b>Singleton Pattern</b>
+              </li>
+              <li>
+                <b>Facade Pattern</b>
+              </li>
+              <li>
+                <b>Composite Pattern</b>
+              </li>
+              <li>
+                <b>State Pattern</b>
+              </li>
             </ul>
           </div>
           <ModalFooter onCloseClick={onCloseClick} />

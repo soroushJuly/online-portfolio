@@ -57,15 +57,20 @@ const SpaceConnector = ({ onCloseClick }) => {
               </p>
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b> Defend the rocket by placing defence nodes and making connection between them.
-               First build up your defence by clicking desired node from menu on the bottom of screen.
-                Then by clicking a parent node and clicking a location, place them on the space..
+              <b>Description:</b> Defend the rocket by placing defence nodes and
+              making connection between them. First build up your defence by
+              clicking desired node from menu on the bottom of screen. Then by
+              clicking a parent node and clicking a location, place them on the
+              space..
             </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>
             <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
-              <li>Worked in a team to make a game from scratch in a tight schedule.</li>
+              <li>
+                Worked in a team to make a game from scratch in a tight
+                schedule.
+              </li>
               {/* <li dangerouslySetInnerHTML={{ __html: bokeh.f1 }}></li> */}
               <li>
                 Developed many gameplay and UI features in <b>Unity</b>.

@@ -1,6 +1,6 @@
 import ModalFooter from "@/components/modals/modal-footer";
 import ModalHeader from "@/components/modals/modal-header";
-import EmbedYoutube from "@/components/embed-youtube"
+import EmbedYoutube from "@/components/embed-youtube";
 import Image from "next/image";
 import { rally } from "@/utils/data-modals";
 
@@ -32,44 +32,30 @@ const Rally = ({ onCloseClick }) => {
                 </b>
               </p>
               <p className="">
-                <b>
-                    {rally.github}
-                </b>
+                <b>{rally.github}</b>
               </p>
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
               <b>Description:</b>
-              &quot;Rally Sahara&quot; is the name of the Time-Trial game I created leveraging C++. 
-              I implemented various effects and techniques using OpenGL and OpenGL shader language (GLSL).
-            
+              &quot;Rally Sahara&quot; is the name of the Time-Trial game I
+              created leveraging C++. I implemented various effects and
+              techniques using OpenGL and OpenGL shader language (GLSL).
             </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>
             <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
               Some of the implementations:
-              <li>Blur Effect
-              </li>
+              <li>Blur Effect</li>
+              <li>Mirror</li>
+              <li>Spotlights and Directional light</li>
+              <li>Toon shader</li>
+              <li>Instanced Rendering</li>
+              <li>Multi-texturing</li>
+              <li>2.5D Text</li>
               <li>
-              Mirror
-              </li>
-              <li>
-              Spotlights and Directional light
-              </li>
-              <li>
-               Toon shader
-              </li>
-              <li>
-              Instanced Rendering
-              </li>
-              <li>
-              Multi-texturing
-              </li>
-              <li>
-              2.5D Text
-              </li>
-              <li>
-              The path is created programmatically using <b> Catmull-Rom splines</b>.
+                The path is created programmatically using{" "}
+                <b> Catmull-Rom splines</b>.
               </li>
             </ul>
           </div>
