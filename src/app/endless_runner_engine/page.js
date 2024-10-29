@@ -4,20 +4,20 @@ import YoutubeEmbed from "@/components/embed-youtube";
 
 export default function EndlessRunnerEngine() {
   const gamesImages = [
-    "picture1.jpg",
-    "picture2.jpg",
-    "picture3.jpg",
-    "picture4.jpg",
-    "picture5.jpg",
-    "picture6.jpg",
-    "picture7.jpg",
-    "picture8.jpg",
+    { id: 0, path: "picture1.jpg" },
+    { id: 1, path: "picture2.jpg" },
+    { id: 2, path: "picture3.jpg" },
+    { id: 3, path: "picture4.jpg" },
+    { id: 4, path: "picture5.jpg" },
+    { id: 5, path: "picture6.jpg" },
+    { id: 6, path: "picture7.jpg" },
+    { id: 7, path: "picture8.jpg" },
   ];
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <h1 className="text-3xl bold mb-6 font-bold">Mono Endless Engine</h1>
-      <h2 className="text-xl mb-16 font-bold">
+      <h1 className="text-3xl bold mb-6 font-bold">MonoEndlessRunner Engine</h1>
+      <h2 className="text-xl mb-8 font-bold">
         A no-code game engine to make endless runner games
       </h2>
       <div>
@@ -40,26 +40,17 @@ export default function EndlessRunnerEngine() {
           Download
         </a>
       </div>
-      <div>
-        <p className="float-left mr-4">Download questionnaire:</p>
-        <a
-          target="_blank"
-          href="https://drive.google.com/uc?export=download&id=1pKJhkq53Y59LEDqVMIolykRSGevGvPHN"
-          className="float-left underline text-blue-600"
-        >
-          Download
-        </a>
-      </div>
       <div className="mt-5 w-1/2">
         <YoutubeEmbed embedId="VkUCOXJ5lDE"></YoutubeEmbed>
       </div>
-      <div className="mt-5">
+      <div className="mt-5 font-bold">
         Screenshots of the games made by user of the engine:
       </div>
       <div className="flex flex-wrap mt-2">
         {gamesImages.map((gamesImages) => (
           <Image
-            src={"/endless-runner/" + gamesImages}
+            key={gamesImages.id}
+            src={"/endless-runner/" + gamesImages.path}
             alt="screenshots of the games made by users of the engine"
             sizes="100vw"
             style={{
@@ -71,7 +62,12 @@ export default function EndlessRunnerEngine() {
           />
         ))}
       </div>
-      <div className="mt-5">Features and key</div>
+      <div className="mt-5 font-bold">Features and skills</div>
+      <ul className="mt-2">
+        <li>- Developed a game engine from scratch using only basic features of MonoGame in C#.</li>
+        <li>- implemented a complete set of tools using ImGui.Net.</li>
+        <li>- Use of design patterns like Observer pattern, Aggregator pattern, Singleton, etc.</li>
+      </ul>
     </main>
   );
 }
