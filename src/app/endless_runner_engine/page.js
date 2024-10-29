@@ -3,6 +3,17 @@ import "./endless-page.css";
 import YoutubeEmbed from '@/components/embed-youtube';
 
 export default function EndlessRunnerEngine() {
+  const gamesImages = [
+    'picture1.jpg',
+    'picture2.jpg',
+    'picture3.jpg',
+    'picture4.jpg',
+    'picture5.jpg',
+    'picture6.jpg',
+    'picture7.jpg',
+    'picture8.jpg',
+  ]
+
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
         <h1 className="text-3xl bold mb-6 font-bold">Mono Endless Engine</h1>
@@ -26,7 +37,23 @@ export default function EndlessRunnerEngine() {
           <YoutubeEmbed embedId='VkUCOXJ5lDE'></YoutubeEmbed>
         </div>
         <div className='mt-5'>
-          Screenshots of the games made with the engine:
+        Screenshots of the games made by user of the engine:
+        </div>
+        <div className='flex flex-wrap mt-2'>
+        {gamesImages.map(gamesImages => 
+        <Image
+        src={"/endless-runner/" + gamesImages}
+        alt="screenshots of the games made by users of the engine"
+        sizes="100vw"
+        style={{
+          width: "auto",
+          height: "200px",
+        }}
+        width={300}
+        height={150}
+      />
+        )}
+        
         </div>
         <div className='mt-5'>
           Features and key
