@@ -80,6 +80,9 @@ const Traveller = ({ onCloseClick }) => {
                 Implemented three different <b>lights</b> in the game. Point
                 light, directional light, and spot light using OpenGL.
               </li>
+              <li>
+                Programmed <b>3D and 2D camera</b> in C++.
+              </li>
             </ul>
           </div>
           <ModalFooter onCloseClick={onCloseClick} />
