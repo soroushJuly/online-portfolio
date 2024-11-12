@@ -52,6 +52,8 @@ const Ezreez = ({ onCloseClick }) => {
                 Learned a new library and a new framework in a small time frame.
               </li>
               <li>Implemented a form.</li>
+              <li>Implemented a custom carousel in JavaScript.</li>
+              <li>Implemented filtering functionality in JavaScript.</li>
               <li>Implemented Modals.</li>
             </ul>
           </div>

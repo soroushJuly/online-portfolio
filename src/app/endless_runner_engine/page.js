@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "./endless-page.css";
 import YoutubeEmbed from "@/components/embed-youtube";
+import Carousel from "@/components/carousel";
 
 export default function EndlessRunnerEngine() {
   const gamesImages = [
@@ -46,27 +47,35 @@ export default function EndlessRunnerEngine() {
       <div className="mt-5 font-bold">
         Screenshots of the games made by user of the engine:
       </div>
-      <div className="flex flex-wrap mt-2">
-        {gamesImages.map((gamesImages) => (
+      <Carousel
+        items={gamesImages.map((gamesImages) => (
           <Image
             key={gamesImages.id}
             src={"/endless-runner/" + gamesImages.path}
             alt="screenshots of the games made by users of the engine"
             sizes="100vw"
             style={{
-              width: "auto",
+              maxWidth: "none",
+              // width: "auto",
               height: "200px",
             }}
             width={300}
             height={150}
           />
         ))}
-      </div>
+        isRotating={true}
+      ></Carousel>
       <div className="mt-5 font-bold">Features and skills</div>
       <ul className="mt-2">
-        <li>- Developed a game engine from scratch using only basic features of MonoGame in C#.</li>
+        <li>
+          - Developed a game engine from scratch using only basic features of
+          MonoGame in C#.
+        </li>
         <li>- implemented a complete set of tools using ImGui.Net.</li>
-        <li>- Use of design patterns like Observer pattern, Aggregator pattern, Singleton, etc.</li>
+        <li>
+          - Use of design patterns like Observer pattern, Aggregator pattern,
+          Singleton, etc.
+        </li>
       </ul>
     </main>
   );

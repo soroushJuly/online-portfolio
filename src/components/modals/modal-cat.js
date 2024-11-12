@@ -67,7 +67,10 @@ const Cat = ({ onCloseClick }) => {
               Features & skills:{" "}
             </span>
             <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
-              <li>Worked in a team to make a game from scratch with a tight deadline.</li>
+              <li>
+                Worked in a team to make a game from scratch with a tight
+                deadline.
+              </li>
               {/* <li dangerouslySetInnerHTML={{ __html: bokeh.f1 }}></li> */}
               <li>Used blueprints to make a timer, interactable areas, etc.</li>
               <li>
