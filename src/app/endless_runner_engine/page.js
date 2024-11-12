@@ -4,14 +4,14 @@ import YoutubeEmbed from "@/components/embed-youtube";
 
 export default function EndlessRunnerEngine() {
   const gamesImages = [
-    { id: 0, path: "picture1.jpg" },
-    { id: 1, path: "picture2.jpg" },
-    { id: 2, path: "picture3.jpg" },
-    { id: 3, path: "picture4.jpg" },
-    { id: 4, path: "picture5.jpg" },
-    { id: 5, path: "picture6.jpg" },
-    { id: 6, path: "picture7.jpg" },
-    { id: 7, path: "picture8.jpg" },
+    { id: 0, path: "Picture1.jpg" },
+    { id: 1, path: "Picture2.jpg" },
+    { id: 2, path: "Picture3.jpg" },
+    { id: 3, path: "Picture4.jpg" },
+    { id: 4, path: "Picture5.jpg" },
+    { id: 5, path: "Picture6.jpg" },
+    { id: 6, path: "Picture7.jpg" },
+    { id: 7, path: "Picture8.jpg" },
   ];
 
   return (
