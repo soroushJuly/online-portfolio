@@ -59,7 +59,7 @@ const Portfolio = () => {
   const projectListItems = filteredProjectList.map((project) => (
     <li
       key={project.id}
-      className="mb-3 w-full sm:w-72 h-80 hover:shadow-lg hover:-translate-y-2 transition-all hover:bg-slate-200 text-center rounded"
+      className="mb-3 mx-1 w-full sm:w-72 h-80 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all hover:bg-slate-200 text-center rounded"
     >
       <button className=" relative" onClick={() => handleProjectClick(project)}>
         <div className=" text-center text-sm">
@@ -68,10 +68,11 @@ const Portfolio = () => {
             src={project.thumbnail}
             width="200"
             height="200"
-            className="mx-auto mt-2"
+            className="mx-auto mt-2 h-48"
           ></Image>
-          <p>{project.position}</p>
-          <p>{project.date}</p>
+          <p className="font-bold my-1">{project.title}</p>
+          <p className="text-xs">{project.position}</p>
+          <p className="text-xs">{project.date}</p>
           <p className=" whitespace-pre-wrap">{project.description}</p>
         </div>
       </button>
