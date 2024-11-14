@@ -1,5 +1,6 @@
 import ModalFooter from "@/components/modals/modal-footer";
 import ModalHeader from "@/components/modals/modal-header";
+import YoutubeEmbed from "@/components/embed-youtube";
 import Image from "next/image";
 
 const Traveller = ({ onCloseClick }) => {
@@ -15,18 +16,7 @@ const Traveller = ({ onCloseClick }) => {
           {/*body*/}
           <div className="Modal__body">
             <div className="Modal__body__image-container">
-              <Image
-                src="/the-traveller/01.png"
-                alt="a screenshot of the traveller game"
-                className="mx-auto"
-                sizes="100vw"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                }}
-                width={300}
-                height={150}
-              />
+              <YoutubeEmbed embedId="491sMXpVJSs"></YoutubeEmbed>
               <p>
                 <b>Date: </b>2023
               </p>
