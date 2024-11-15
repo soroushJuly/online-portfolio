@@ -1,9 +1,21 @@
 import ModalFooter from "@/components/modals/modal-footer";
 import ModalHeader from "@/components/modals/modal-header";
+import Carousel from "@/components/carousel";
 import Image from "next/image";
 import { persia } from "@/utils/data-modals";
 
 const SonOfPersia = ({ onCloseClick }) => {
+  const gameImages = [
+    { id: 0, path: "01.png" },
+    { id: 1, path: "02.png" },
+    { id: 2, path: "03.png" },
+    { id: 3, path: "04.png" },
+    { id: 4, path: "05.png" },
+    { id: 5, path: "06.png" },
+    { id: 6, path: "07.png" },
+    { id: 7, path: "08.png" },
+  ];
+
   return (
     <>
       <div className="Modal">
@@ -68,6 +80,24 @@ const SonOfPersia = ({ onCloseClick }) => {
                 Created a nice environment and atmosphere using Unity Engine.
               </li>
             </ul>
+            <Carousel
+              items={gameImages.map((gameImages) => (
+                <Image
+                  key={gameImages.id}
+                  src={"/persia/" + gameImages.path}
+                  alt="screenshots of the games made by users of the engine"
+                  sizes="100vw"
+                  style={{
+                    maxWidth: "none",
+                    // width: "auto",
+                    height: "200px",
+                  }}
+                  width={300}
+                  height={150}
+                />
+              ))}
+              isRotating={true}
+            ></Carousel>
           </div>
           <ModalFooter onCloseClick={onCloseClick} />
         </div>
