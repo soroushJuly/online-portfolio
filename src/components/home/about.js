@@ -37,13 +37,23 @@ const About = () => {
                 />
               </a>
             </li>
-            <li className="hover:bg-orange-200 rounded-full">
+            <li className="hover:bg-orange-200 rounded-full mr-3">
               <a href="https://github.com/soroushJuly" target="blank">
                 <Image
                   alt="Github Icon"
                   width="30"
                   height="30"
                   src="/github.svg"
+                />
+              </a>
+            </li>
+            <li className="hover:bg-orange-200 rounded-full">
+              <a href="https://www.youtube.com/@soroush_j_developer" target="blank">
+                <Image
+                  alt="Youtube Icon"
+                  width="30"
+                  height="30"
+                  src="/youtube.svg"
                 />
               </a>
             </li>
