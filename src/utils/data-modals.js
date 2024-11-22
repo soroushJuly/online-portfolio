@@ -6,6 +6,11 @@ export const ostadbank = {
   f1: `Worked on other developers' code.`,
 };
 
+export const traveller = {
+  title: `Son Of Persia`,
+  github: `Link to the game's Github Repository`,
+  linkToGithub: `https://github.com/soroushJuly/AGT-Project`,
+};
 export const catData = {
   title: `Cat with a vengence`,
   position: "Gameplay/UI Programmer",

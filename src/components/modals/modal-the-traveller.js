@@ -1,6 +1,7 @@
 import ModalFooter from "@/components/modals/modal-footer";
 import ModalHeader from "@/components/modals/modal-header";
 import YoutubeEmbed from "@/components/embed-youtube";
+import { traveller } from "@/utils/data-modals";
 import Image from "next/image";
 
 const Traveller = ({ onCloseClick }) => {
@@ -22,6 +23,13 @@ const Traveller = ({ onCloseClick }) => {
               </p>
               <p>
                 <b>Duration: </b>3 months
+              </p>
+              <p className="underline text-blue-400">
+                <b>
+                  <a href={traveller.linkToGithub} target="blank">
+                    {traveller.github}
+                  </a>
+                </b>
               </p>
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
