@@ -17,5 +17,5 @@
 }
 
 .Header__avatar {
-  @apply w-28 h-28 md:w-64 md:h-64 border-8 border-solid border-slate-900 rounded-full;
+  @apply w-28 h-28 md:w-52 md:h-52 border-8 border-solid border-slate-900 rounded-full;
 }

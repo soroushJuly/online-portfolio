@@ -48,7 +48,10 @@ const About = () => {
               </a>
             </li>
             <li className="hover:bg-orange-200 rounded-full">
-              <a href="https://www.youtube.com/@soroush_j_developer" target="blank">
+              <a
+                href="https://www.youtube.com/@soroush_j_developer"
+                target="blank"
+              >
                 <Image
                   alt="Youtube Icon"
                   width="30"
