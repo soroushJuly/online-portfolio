@@ -73,7 +73,7 @@ export const about = {
 };
 
 export const interests = {
-  i2: "I'm currently learning how to develop an <b>AR/VR application</b> using <b>Unity</b> and so far, I've found it interesting.",
+  i2: "I love creating interactive websites as a <b>Fullstack developer</b> using JavaScript frameworks like Node.js, Vue.js and React.js.",
   i3: "I particularly like working with C++ code bases, constantly aiming to enhance functionality and <b>optimize</b> for better performance.",
   i4: "I believe French is a charming and intricate language. I love <b>learning French</b>. I dive into studying it almost every day, enjoying the challenge it brings.",
 };
