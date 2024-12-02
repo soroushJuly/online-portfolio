@@ -24,6 +24,13 @@ const Traveller = ({ onCloseClick }) => {
               <p>
                 <b>Duration: </b>3 months
               </p>
+              <p className="underline text-green-400">
+                <b>
+                  <a href={traveller.linkDownload} target="blank">
+                    {traveller.download}
+                  </a>
+                </b>
+              </p>
               <p className="underline text-blue-400">
                 <b>
                   <a href={traveller.linkToGithub} target="blank">

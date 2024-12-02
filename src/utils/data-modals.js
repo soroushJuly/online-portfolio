@@ -9,13 +9,15 @@ export const ostadbank = {
 export const traveller = {
   title: `Son Of Persia`,
   github: `Link to the game's Github Repository`,
+  download: `Download the game`,
   linkToGithub: `https://github.com/soroushJuly/AGT-Project`,
+  linkDownload: `https://drive.google.com/file/d/1h45mtGM_YbFuhxE0bdz-T7eS8iMi4K3S/view?usp=drive_link`,
 };
 export const catData = {
   title: `Cat with a vengence`,
   position: "Gameplay/UI Programmer",
   page: `Link to the game's page`,
-  download: `Download the game's executable`,
+  download: `Download the game`,
   github: `Link to the game's Github Repository`,
   linkPage: `https://globalgamejam.org/games/2024/cat-vengeance-5`,
   linkDownload: `https://ggjv4.s3.us-west-1.amazonaws.com/files/games/2024/788367/exec/GlobalGamJam24_Cat_Build.zip?VersionId=Dd1hZnRw.RePH5G0s6kuoOqy4nHGoQnG`,
@@ -38,7 +40,7 @@ export const monsterfall = {
 export const rally = {
   title: `Rally Sahara`,
   position: "Game Programmer | Game Designer",
-  download: `Download the game's executable`,
+  download: `Download the game`,
   github: `Code parts available on request`,
   linkDownload: `https://drive.google.com/file/d/1XlFD-InX2NApGDdAkFZmNy2z-1cXhGtt/view?usp=drive_link`,
   linkToGithub: ``,

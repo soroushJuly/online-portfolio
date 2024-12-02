@@ -24,7 +24,7 @@ const Rally = ({ onCloseClick }) => {
               <p>
                 <b>Duration: </b>4 months
               </p>
-              <p className=" underline text-blue-400 ">
+              <p className=" underline text-green-400">
                 <b>
                   <a href={rally.linkDownload} target="blank">
                     {rally.download}
