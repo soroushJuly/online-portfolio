@@ -14,7 +14,6 @@ const About = () => {
           <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p2 }} />
           <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p3 }} />
           <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p4 }} />
-          <p className=" mb-2" dangerouslySetInnerHTML={{ __html: about.p5 }} />
           <p className="mb-2">
             I am enthusiastically open to diverse projects. Please feel free
             to&nbsp;
@@ -68,14 +67,10 @@ const About = () => {
           </h4>
           <ul className="flex flex-col text-base pl-3 md:pl-6">
             <li className="list-disc list-inside">
-              I love coding game-related subjects. Topics like Programming{" "}
+              Coding game-related subjects. Topics like Programming{" "}
               <b>Game Engines</b>, <b>AI</b>, and <b>Graphics</b> always catch
               my attention.
             </li>
-            <li
-              className="list-disc list-inside"
-              dangerouslySetInnerHTML={{ __html: interests.i2 }}
-            />
             <li
               className="list-disc list-inside"
               dangerouslySetInnerHTML={{ __html: interests.i3 }}
@@ -83,6 +78,10 @@ const About = () => {
             <li
               className="list-disc list-inside"
               dangerouslySetInnerHTML={{ __html: interests.i4 }}
+            />
+            <li
+              className="list-disc list-inside"
+              dangerouslySetInnerHTML={{ __html: interests.i5 }}
             />
           </ul>
         </div>

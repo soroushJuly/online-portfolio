@@ -64,24 +64,22 @@ export const about = {
   p2: `I enjoy <b>problem-solving</b> and spending hours coding, always paying <b>close attention to detail</b> in the apps I create.
   My primary focus is on <b>C++/C#</b>, <b>JavaScript</b>, and occasionally <b>Python</b>. 
   Learning new things in this field is something I'll always do.`,
-  p3: `With over <b>three years</b> of professional experience as a <b>software engineer</b> my focus
-   was centered on <b>web</b> and <b>game</b> applications. I've also collaborated within teams and showcased effective communication skills. 
+  p3: `My programming focus as a software engineer is centered on <b>game</b> and <b>web</b> applications. I've also collaborated within teams and showcased effective communication skills. 
 `,
   p4: "",
-  p5: "I completed my bachelor's in Electrical Engineering in 2019, and I graduated from my <b>Master's in Computer Games Technology</b> with a distinction in 2024.",
   p6: "a software engineer eager about game development. I worked as a software engineer in different teams in the tech industry for about 2 years. I’m currently studying for a master’s in computer games technology with an expected end date of August 2024. The focus of my course is on C++ programming and learning the essential math skills to build high-quality games, I’ve also completed an in-depth Udemy course on C++ and Unreal engine, therefore I have a robust understanding of C++. Based on my experience I can learn new programming languages fast and can easily understand and work on top of others’ codes. Also, I’m comfortable using company-specific engines to build a game as I did in my course. On top of that, I’m working on the game engine  we used at the university and improving it. I have had a passion  for games from a young age and Now I can’t wait to face new challenges in game programming.",
 };
 
 export const interests = {
-  i2: "I love creating interactive websites as a <b>Fullstack developer</b> using JavaScript frameworks like Node.js, Vue.js and React.js.",
-  i3: "I particularly like working with C++ code bases, constantly aiming to enhance functionality and <b>optimize</b> for better performance.",
-  i4: "I believe French is a charming and intricate language. I love <b>learning French</b>. I dive into studying it almost every day, enjoying the challenge it brings.",
+  i3: "Working with C++ code bases, aiming to enhance functionality and <b>optimize</b> for better performance.",
+  i4: "Learning French.",
+  i5: "Gym.",
 };
 
 // -------------------- Portfolio -------------------- //
 export const tagList = [
   { id: 0, name: "Game" },
-  { id: 1, name: "Web" },
+  // { id: 1, name: "Web" },
   { id: 2, name: "AI" },
   { id: 3, name: "Graphics" },
   { id: 4, name: "Unreal" },
@@ -112,46 +110,6 @@ export const projectList = [
     modal: "Bokeh",
   },
   {
-    id: 2,
-    title: "OstadBank",
-    position: "Software developer",
-    date: "2021 - 2022",
-    thumbnail: "/thumb-ostadbank.jpg",
-    description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
-    tags: ["Web"],
-    modal: "Ostadbank",
-  },
-  {
-    id: 3,
-    title: "HiExchange",
-    position: "Software Developer",
-    date: "2021",
-    thumbnail: "/thumb-hi-exchange.jpg",
-    description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
-    tags: ["Web"],
-    modal: "HiExchange",
-  },
-  {
-    id: 4,
-    title: "EZREEZ",
-    position: "Software Developer",
-    date: "2020",
-    thumbnail: "/thumb-ezreez.jpg",
-    description: "JavaScript | Vue.js | Nuxt.js | HTML | CSS",
-    tags: ["Web"],
-    modal: "Ezreez",
-  },
-  {
-    id: 5,
-    title: "Online Portfolio",
-    position: "Software Developer/Designer",
-    date: "2023",
-    thumbnail: "/thumb-portfolio.jpg",
-    description: "JavaScript | React.js | Next.js | HTML | CSS",
-    tags: ["Web"],
-    modal: "Portfolio",
-  },
-  {
     id: 6,
     title: "Cat with a Vengence",
     position: "Gameplay/UI Programmer",
@@ -160,16 +118,6 @@ export const projectList = [
     description: "Unreal | Blueprints | Gameplay | UI",
     tags: ["Game", "Unreal", "c++", "Blueprints", "Game Jam"],
     modal: "CatGame",
-  },
-  {
-    id: 7,
-    title: "Warrior",
-    position: "Game Programmer",
-    date: "2024",
-    thumbnail: "/thumb-warrior.jpg",
-    description: "Unreal | AI | Gameplay | UI",
-    tags: ["Game", "Unreal", "c++", "Blueprints"],
-    modal: "Warrior",
   },
   {
     id: 8,
