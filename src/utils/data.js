@@ -73,7 +73,7 @@ export const about = {
 export const interests = {
   i3: "Working with C++ code bases, aiming to enhance functionality and <b>optimize</b> for better performance.",
   i4: "Learning French.",
-  i5: "Gym.",
+  i5: "Exercising.",
 };
 
 // -------------------- Portfolio -------------------- //
