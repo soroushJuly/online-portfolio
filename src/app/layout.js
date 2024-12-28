@@ -18,6 +18,12 @@ export default function RootLayout({ children }) {
       className="scroll-smooth"
       style={{ scrollBehavior: "smooth" }}
     >
+      <head>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+      </head>
       <body className={inter.className}>
         <Header />
         {children}
