@@ -1,10 +1,10 @@
-import { Roboto } from "next/font/google";
+import { Raleway } from "next/font/google";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 import "./globals.css";
 
-const inter = Roboto({ subsets: ["latin"], weight: ["400"] });
+const inter = Raleway({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "Soroush Jolai | Portfolio",
