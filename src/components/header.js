@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect } from "react";
 
 // import useEffect from "react";
@@ -26,28 +27,32 @@ const Header = () => {
   };
 
   return (
-    <header className="app-header flex p-2 md:p-6 text-center text-white justify-between">
-      {/* <Logo></Logo> */}
-      <div className=" pr-8 sm:pr-14 md:pr-80 text-sm md:text-lg lg:text-2xl">
+    <header className="app-header ">
+      <div className=" text-black pr-8 sm:pr-14 md:pr-80 text-sm md:text-lg lg:text-2xl">
         <Link href="/">Soroush Jolai</Link>
       </div>
       <nav>
         <ul className="flex md:text-lg lg:text-2xl">
           <li>
-            <Link href="/#about">About</Link>
+            <a href="/CV-Soroush-Jolai-Games.pdf"
+              alt="CV"
+              target="_blank"
+              rel="noopener noreferrer" className="app-header__link"><span>CV</span>
+              <i class="material-icons app-header__icon">download</i>
+            </a>
           </li>
           <li>
-            <Link href="/#projects">Projects</Link>
+            <Link className="app-header__link" href="/#projects">Projects</Link>
           </li>
           <li>
-            <Link href="/#skills">Skills</Link>
+            <Link className="app-header__link" href="/#skills">Skills</Link>
           </li>
           <li>
-            <Link href="/#contact">Contact</Link>
+            <Link className="app-header__link" href="/#contact">Contact</Link>
           </li>
         </ul>
       </nav>
-    </header>
+    </header >
   );
 };
 
