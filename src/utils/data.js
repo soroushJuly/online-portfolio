@@ -60,14 +60,12 @@ export const tools = [
 
 // -------------------- About -------------------- //
 export const about = {
-  p1: `Hi there! It's Soroush.`,
+  p1: `Hi there! I'm <b>Soroush Jolai</b>, a dedicated gameplay engineer and engine programmer with a passion for optimizing and creating games.`,
   p2: `I enjoy <b>problem-solving</b> and spending hours coding, always paying <b>close attention to detail</b> in the apps I create.
-  My primary focus is on <b>C++/C#</b>, <b>JavaScript</b>, and occasionally <b>Python</b>. 
-  Learning new things in this field is something I'll always do.`,
-  p3: `My programming focus as a software engineer is centered on <b>game</b> and <b>web</b> applications. I've also collaborated within teams and showcased effective communication skills. 
-`,
-  p4: "",
-  p6: "a software engineer eager about game development. I worked as a software engineer in different teams in the tech industry for about 2 years. I’m currently studying for a master’s in computer games technology with an expected end date of August 2024. The focus of my course is on C++ programming and learning the essential math skills to build high-quality games, I’ve also completed an in-depth Udemy course on C++ and Unreal engine, therefore I have a robust understanding of C++. Based on my experience I can learn new programming languages fast and can easily understand and work on top of others’ codes. Also, I’m comfortable using company-specific engines to build a game as I did in my course. On top of that, I’m working on the game engine  we used at the university and improving it. I have had a passion  for games from a young age and Now I can’t wait to face new challenges in game programming.",
+  I've experince <b>working in teams</b> showcasing effective communication skills and a collaborative spirit.
+  Learning new things as a programmer is something I'll always do.`,
+  p3: ``,
+
 };
 
 export const interests = {
@@ -78,15 +76,9 @@ export const interests = {
 
 // -------------------- Portfolio -------------------- //
 export const tagList = [
-  { id: 0, name: "Game" },
-  // { id: 1, name: "Web" },
-  { id: 2, name: "AI" },
-  { id: 3, name: "Graphics" },
-  { id: 4, name: "Unreal" },
-  { id: 5, name: "Game Jam" },
-  { id: 6, name: "Game Engine" },
-  { id: 7, name: "c++" },
-  { id: 8, name: "c#" },
+  { id: 5, name: "Game Jam", label: "Game Jam" },
+  { id: 7, name: "c++", label: 'C++ & Unreal Engine' },
+  { id: 8, name: "c#", label: 'C# & Unity' },
 ];
 export const projectList = [
   {
@@ -94,10 +86,20 @@ export const projectList = [
     title: "The Traveller",
     position: "Programmer/Designer",
     date: "2023",
+    duration: '3 months',
     thumbnail: "/thumb-the-traveller.jpg",
-    description: "C++ | OpenGL | AI",
+    stack: "C++ | GLSL | OpenGL | AI",
     tags: ["Game", "c++", "AI", "Graphics"],
-    modal: "Traveller",
+    modal: "traveller",
+    description: `The Traveller is a 3D Platformer game I
+              developed using <b>a custom game engine</b>. The game has a
+              cartoony theme and several gameplay elements. Right now the game
+              has only level. The goal of the game is to reach the village on
+              time and save the village by defeating the final boss. The game is
+              fully coded in C++. I developed almost all the features only using
+              low-level code without the help of any extra libraries.`,
+    linkToGithub: `https://github.com/soroushJuly/AGT-Project`,
+    linkDownload: `https://drive.google.com/file/d/1h45mtGM_YbFuhxE0bdz-T7eS8iMi4K3S/view?usp=drive_link`,
   },
   {
     id: 1,
@@ -105,8 +107,15 @@ export const projectList = [
     position: "Programmer/Designer",
     date: "2023",
     thumbnail: "/thumb-bokeh.jpg",
-    description: "Unreal | Game Design | Blueprints",
+    stack: "Unreal | Game Design | Blueprints",
     tags: ["Game", "Unreal", "c++"],
+    description: `Bokeh is the name of the game prototype that I
+              developed during the Game Development Process module. I wrote a
+              Game Design Document for this game then using Unreal Engine and
+              blueprints I made a prototype of the game. Bokeh is a serious game
+              about photography. I have implemented an in-game camera that
+              players can take pictures with. Also, they can review the pictures
+              in the gallery and save the one you like on your hard drive`,
     modal: "Bokeh",
   },
   {
@@ -115,9 +124,17 @@ export const projectList = [
     position: "Gameplay/UI Programmer",
     date: "2024",
     thumbnail: "/thumb-cat.png",
-    description: "Unreal | Blueprints | Gameplay | UI",
+    stack: "Unreal | Blueprints | Gameplay | UI",
     tags: ["Game", "Unreal", "c++", "Blueprints", "Game Jam"],
+    description: `Cat with a Vengence is the name of the game
+              that I participated in creating during Global Game Jam 2024. From
+              idea generation to UI and gameplay programming. I worked in a team
+              of six people to create this indie game in just three days. We
+              used Unreal Engine and mostly blueprints.`,
     modal: "CatGame",
+    linkPage: `https://globalgamejam.org/games/2024/cat-vengeance-5`,
+    linkDownload: `https://ggjv4.s3.us-west-1.amazonaws.com/files/games/2024/788367/exec/GlobalGamJam24_Cat_Build.zip?VersionId=Dd1hZnRw.RePH5G0s6kuoOqy4nHGoQnG`,
+    linkToGithub: `https://github.com/soroushJuly/GlobalGameJam24`,
   },
   {
     id: 8,
@@ -125,9 +142,18 @@ export const projectList = [
     position: "Game Programmer",
     date: "2024",
     thumbnail: "/thumb-monsterfall.png",
-    description: "Engine | Gameplay | AI | UI",
+    stack: "Engine | Gameplay | AI | UI",
     tags: ["Game Engine", "Game", "c#", "Monogame", "AI"],
+    description: `Monsterfall is an isometric RPG 2D game that I
+              developed during the Computer Games Architecture class. I
+              developed a simple engine using monogame framework and then
+              leveraging that engine, I created this game. I tried to
+              incorporate best practices developing the engine and the game, for
+              instance I used programming patterns like: singleton pattern,
+              data-driven design, etc.`,
     modal: "Monsterfall",
+    linkDownload: `https://drive.google.com/file/d/1mT8YHT4CHTT3_G3KqWN_piI6pDnxp7wL/view?usp=sharing`,
+    linkToGithub: `https://github.com/soroushJuly/Monsterfall_01`,
   },
   {
     id: 9,
@@ -135,9 +161,14 @@ export const projectList = [
     position: "Game Programmer",
     date: "2024",
     thumbnail: "/thumb-rally.jpg",
-    description: "Engine | Graphics | OpenGL | Gameplay",
+    stack: "Engine | Graphics | OpenGL | Gameplay",
     tags: ["Game Engine", "Graphics", "c++", "OpenGL", "Gameplay"],
+    description: `&quot;Rally Sahara&quot; is the name of the Time-Trial game I
+              created leveraging C++. I implemented various effects and
+              techniques using OpenGL and OpenGL shader language (GLSL).`,
     modal: "Rally",
+    linkDownload: `https://drive.google.com/file/d/1XlFD-InX2NApGDdAkFZmNy2z-1cXhGtt/view?usp=drive_link`,
+    linkToGithub: ``,
   },
   {
     id: 10,
@@ -145,9 +176,14 @@ export const projectList = [
     position: "Game Programmer | Game Designer",
     date: "2024",
     thumbnail: "/thumb-persia.png",
-    description: "Game | Unity | VR | Meta Quest",
+    stack: "Game | Unity | VR | Meta Quest",
     tags: ["Game", "Unity", "c#", "VR"],
+    description: `&quot;Son of Peria&quot; is the game that I designed and coded
+              using Unity (C#) and Meta Quest 2 headsets. It&apos;s an
+              action-adventure game based on a Persian myth.`,
     modal: "SonOfPersia",
+    linkDownload: `https://drive.google.com/file/d/1MD0fU1NZUd52YRxZMFtjVnP1vHM9z8i7/view?usp=sharing`,
+    linkToGithub: `https://github.com/soroushJuly/Son-of-persia-VR`,
   },
   {
     id: 11,
@@ -155,9 +191,16 @@ export const projectList = [
     position: "Game Programmer | Game Designer",
     date: "2024",
     thumbnail: "/thumb-space.jpg",
-    description: "Game | Unity | C#",
+    stack: "Game | Unity | C#",
     tags: ["Game", "Unity", "c#", "Game Jam"],
+    description: `Defend the rocket by placing defence nodes and
+              making connection between them. First build up your defence by
+              clicking desired node from menu on the bottom of screen. Then by
+              clicking a parent node and clicking a location, place them on the
+              space.`,
     modal: "SpaceConnector",
+    linkDownload: `https://soroushjuly.itch.io/space-connectors`,
+    linkToGithub: `https://github.com/Shantanu-Bhatt-K/KenneyGameJam/tree/NodeStructure`,
   },
   {
     id: 12,
@@ -165,8 +208,9 @@ export const projectList = [
     position: "Designer and Game Programmer",
     date: "2024",
     thumbnail: "/thumb-endless.png",
-    description: "Game Engine | C#",
+    stack: "Game Engine | C#",
     tags: ["Game", "Game Engine", "c#", "Tools"],
+    description: ``,
     modal: "EndlessRunner",
   },
 ];

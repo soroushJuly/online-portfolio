@@ -38,7 +38,7 @@ const Header = () => {
               alt="CV"
               target="_blank"
               rel="noopener noreferrer" className="app-header__link"><span>CV</span>
-              <i class="material-icons app-header__icon">download</i>
+              <i className="material-icons app-header__icon">download</i>
             </a>
           </li>
           <li>
