@@ -57,11 +57,7 @@ const SpaceConnector = ({ onCloseClick }) => {
               </p>
             </div>
             <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b> Defend the rocket by placing defence nodes and
-              making connection between them. First build up your defence by
-              clicking desired node from menu on the bottom of screen. Then by
-              clicking a parent node and clicking a location, place them on the
-              space..
+              <b>Description:</b>
             </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}

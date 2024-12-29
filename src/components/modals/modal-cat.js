@@ -56,13 +56,6 @@ const Cat = ({ onCloseClick }) => {
                 </b>
               </p>
             </div>
-            <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b> Cat with a Vengence is the name of the game
-              that I participated in creating during Global Game Jam 2024. From
-              idea generation to UI and gameplay programming. I worked in a team
-              of six people to create this indie game in just three days. We
-              used Unreal Engine and mostly blueprints.
-            </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>

@@ -61,12 +61,6 @@ const SonOfPersia = ({ onCloseClick }) => {
                 </b>
               </p>
             </div>
-            <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b>
-              &quot;Son of Peria&quot; is the game that I designed and coded
-              using Unity (C#) and Meta Quest 2 headsets. It&apos;s an
-              action-adventure game based on a Persian myth.
-            </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>

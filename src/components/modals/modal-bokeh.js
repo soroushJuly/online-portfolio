@@ -35,15 +35,6 @@ const Bokeh = ({ onCloseClick }) => {
                 <b>Duration: </b>3 months
               </p>
             </div>
-            <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b> Bokeh is the name of the game prototype that I
-              developed during the Game Development Process module. I wrote a
-              Game Design Document for this game then using Unreal Engine and
-              blueprints I made a prototype of the game. Bokeh is a serious game
-              about photography. I have implemented an in-game camera that
-              players can take pictures with. Also, they can review the pictures
-              in the gallery and save the one you like on your hard drive
-            </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>

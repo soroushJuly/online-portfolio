@@ -35,12 +35,6 @@ const Rally = ({ onCloseClick }) => {
                 <b>{rally.github}</b>
               </p>
             </div>
-            <p className="my-4 text-blueGray-500 md:text-lg leading-relaxed">
-              <b>Description:</b>
-              &quot;Rally Sahara&quot; is the name of the Time-Trial game I
-              created leveraging C++. I implemented various effects and
-              techniques using OpenGL and OpenGL shader language (GLSL).
-            </p>
             <span className="my-4 text-blueGray-500 md:text-lg leading-relaxed font-semibold">
               Features & skills:{" "}
             </span>

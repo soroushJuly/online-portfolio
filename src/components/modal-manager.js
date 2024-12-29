@@ -4,7 +4,6 @@ import Traveller from "@/components/modals/modal-the-traveller";
 import Bokeh from "@/components/modals/modal-bokeh";
 import Portfolio from "@/components/modals/modal-portfolio";
 import CatGame from "@/components/modals/modal-cat";
-import Warrior from "@/components/modals/modal-warrior";
 import Monsterfall from "@/components/modals/modal-monsterfall";
 import Rally from "@/components/modals/modal-rally";
 import SonOfPersia from "@/components/modals/modal-son-of-persian";
@@ -26,8 +25,6 @@ export default function Modal({ activeModal, isShowModal, onCloseClick }) {
         return <Portfolio onCloseClick={onCloseClick} />;
       case "CatGame":
         return <CatGame onCloseClick={onCloseClick} />;
-      case "Warrior":
-        return <Warrior onCloseClick={onCloseClick} />;
       case "Monsterfall":
         return <Monsterfall onCloseClick={onCloseClick} />;
       case "Rally":
