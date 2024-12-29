@@ -1,5 +1,9 @@
-.tag--active {
-  background-color: blanchedalmond;
+.tag .tag--active {
+  @apply bg-colorCardPrimary border-success;
+}
+
+.tag__button{
+  @apply border-2 rounded-xl md:px-2 items-center flex h-full hover:bg-colorBgAccent ;
 }
 .tag {
   margin-right: 4px;

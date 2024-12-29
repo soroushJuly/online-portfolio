@@ -2,18 +2,26 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
 import { projectList, tagList } from "@/utils/data";
 import ModalManager from "@/components/modal-manager";
 
 import "./portfolio.css";
 
 const Portfolio = () => {
-  const [activeTags, setActiveTags] = useState([]);
+  const [activeTags, setActiveTags] = useState(() => {
+    let list = []
+    tagList.forEach(element => {
+      list.push(element.name)
+    });
+    return list;
+  });
   const [activeProject, setActiveProject] = useState({});
   const [showModal, setShowModal] = useState(false);
+  const router = useRouter()
 
   const handleProjectClick = (project) => {
-    setShowModal(true);
+    router.push('projects/' + project.modal)
     setActiveProject(project);
   };
 
@@ -29,23 +37,40 @@ const Portfolio = () => {
     return activeTags.includes(tag);
   };
 
-  const tagListItems = tagList.map((tag) => (
-    <li
-      className={checkTagInList(tag.name) ? "tag tag--active" : "tag"}
-      key={tag.id}
-    >
-      <button
-        className=" border-purple-400 border-2 rounded-xl hover:bg-slate-300 md:px-2"
-        onClick={() => handleTagClick(tag.name)}
+  const tagListItems = tagList.map((tag) => {
+    if (checkTagInList(tag.name)) {
+      return (<li className="tag tag--active" key={tag.id}
       >
-        {tag.name}
-      </button>
-    </li>
-  ));
+        <button
+          className="tag__button border-success"
+          onClick={() => handleTagClick(tag.name)}
+        >
+          {tag.label}
+          <span className="material-icons text-success">
+            check
+          </span>
+        </button>
+      </li>)
+    }
+    else {
+      return (<li className="tag" key={tag.id}
+      >
+        <button
+          className="tag__button border-colorTertiary"
+          onClick={() => handleTagClick(tag.name)}
+        >
+          {tag.label}
+          <span className="material-icons text-error">
+            close
+          </span>
+        </button>
+      </li>)
+    }
+  });
 
   function checkTags(project) {
     if (!activeTags.length) {
-      return project;
+      return null;
     }
     for (let i = 0; i < activeTags.length; i++) {
       const element = activeTags[i];
@@ -56,28 +81,30 @@ const Portfolio = () => {
   }
 
   const filteredProjectList = projectList.filter(checkTags);
-  const projectListItems = filteredProjectList.map((project) => (
+  const projectListItems = filteredProjectList.length ? filteredProjectList.map((project) => (
     <li
       key={project.id}
-      className="mb-3 mx-1 w-full sm:w-72 h-80 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all hover:bg-slate-200 text-center rounded"
+      className="mb-3 p-3 mx-1 min-h-[220px] w-full shadow-md hover:shadow-lg hover:-translate-y-2 transition-all hover:bg-slate-200 text-center rounded"
     >
-      <button className=" relative" onClick={() => handleProjectClick(project)}>
-        <div className=" text-center text-sm">
+      <button className="w-full h-full relative" onClick={() => handleProjectClick(project)}>
+        <div className="flex h-full items-center text-center text-sm">
           <Image
             alt={project.title}
             src={project.thumbnail}
             width="200"
             height="200"
-            className="mx-auto mt-2 h-48"
+            className="mr-3"
           ></Image>
-          <p className="font-bold my-1">{project.title}</p>
-          <p className="text-xs">{project.position}</p>
-          <p className="text-xs">{project.date}</p>
-          <p className=" whitespace-pre-wrap">{project.description}</p>
+          <div className="flex flex-col h-full text-left">
+            <p className="text-lg font-bold my-1">{project.title}<span className="text-xs font-normal pl-2">{project.date}</span></p>
+            <p className="text-sm mb-1">{project.position}</p>
+            <p className="font-bold whitespace-pre-wrap mb-1">{project.stack}</p>
+            <p dangerouslySetInnerHTML={{ __html: project.description }} />
+          </div>
         </div>
       </button>
     </li>
-  ));
+  )) : <p>No category selected!</p>;
 
   return (
     <section id="projects" className="Section">
@@ -86,12 +113,9 @@ const Portfolio = () => {
         isShowModal={showModal}
         onCloseClick={() => setShowModal(false)}
       />
-      <h3 className="Title col-span-2 h-min">Projects</h3>
+      <h3 className="Title col-span-2 h-min">Featured Projects</h3>
       <div className=" text-center mb-3">
         <span className=" md:text-lg">
-          Here are some of the projects that I have done. Including the projects
-          I did when I was employed, learning-based projects, and personal
-          projects. <br />
           <u>Filter projects by tags:</u>
         </span>
       </div>
