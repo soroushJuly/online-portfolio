@@ -20,7 +20,7 @@ const Page = async ({ params }) => {
                         Download Game
                     </a>
                     <a href={projectData.linkToGithub} target="blank" className="bg-blue-400 text-white p-2 rounded-lg">
-                        Link to project's Github
+                        Link to project&apos;s Github
                     </a>
                 </p>
             </div>
