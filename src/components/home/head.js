@@ -19,7 +19,7 @@ export default function Head() {
               height="270"
               className="Header__avatar "
             />
-            <ul className="flex flex-col justify-center gap-2 ml-4">
+            <ul className="flex flex-col justify-center lg:gap-2 ml-4">
               <li className="hover:bg-orange-200">
                 <a
                   href="http://www.linkedin.com/in/soroush-july-jolai"
