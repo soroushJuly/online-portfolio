@@ -1,34 +1,15 @@
-.Header {
-  background-image: url("/header-image.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .Header-overlay {
   position: absolute;
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 20, 170, 0.6); /* Black background with opacity */
-}
-
-.Section {
-  padding: 25px 20px;
-  @screen md {
-    padding: 35px 50px;
-  }
-  @screen lg {
-    padding: 45px 160px;
-  }
-  width: 100%;
-}
-
-.Section--white {
-  @apply bg-white;
+  background-color: rgba(0, 20, 170, 0.6);
+  /* Black background with opacity */
 }
 
 .Section .Title {
@@ -36,17 +17,19 @@
   font-size: 20px;
   text-decoration: dashed;
   border-bottom: 2px;
-  border-color: orange;
+  /* @apply border-colorSecondary; */
   letter-spacing: 0.1em;
   font-weight: 600;
   width: fit-content;
   margin: auto;
-  margin-bottom: 20px;
+
   @screen md {
     font-size: 40px;
     margin-bottom: 40px;
     /* @apply text-4xl; */
   }
+
+  @apply mb-3;
 }
 
 .Section .Title::after {
@@ -54,6 +37,6 @@
   display: block;
   width: 100%;
   height: 4px;
-  background: orange;
+  @apply bg-colorSecondary;
   border-radius: 20px;
 }

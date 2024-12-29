@@ -8,6 +8,16 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+p,
+li {
+  @apply text-text-color;
+}
+
+h3,
+h4 {
+  @apply text-black;
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,17 +28,33 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
+}
+
+.main {
+  @apply flex min-h-screen flex-col items-center justify-between;
+}
+
+.Section {
+  padding: 25px 20px;
+  @apply bg-colorBg;
+
+  @screen md {
+    padding: 30px 50px;
+  }
+
+  @screen lg {
+    padding: 38px 160px;
+  }
+
+  width: 100%;
 }
 
 .Modal {
