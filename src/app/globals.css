@@ -39,7 +39,7 @@ html {
 }
 
 .main {
-  @apply flex min-h-screen flex-col items-center justify-between;
+  @apply flex flex-col items-center justify-between;
 }
 
 .Section {

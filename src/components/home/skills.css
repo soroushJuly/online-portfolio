@@ -1,5 +1,6 @@
 .Button-list button {
   padding-right: 6px;
+
   @screen md {
     padding-right: 12px;
   }
@@ -13,11 +14,10 @@
   @apply text-colorTertiary underline underline-offset-2;
 }
 
-.description
-{
-  @apply border-2 rounded text-sm md:text-base border-gray-400 p-3; 
+.description {
+  @apply border-2 rounded text-sm md:text-base border-gray-400 p-3;
 }
 
-.description > a {
-  @apply underline;
+.description>a {
+  @apply underline hover:text-colorTertiary;
 }
