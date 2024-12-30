@@ -1,17 +1,41 @@
 import YoutubeEmbed from "@/components/embed-youtube";
+import Carousel from "@/components/carousel";
+import Image from "next/image";
 import { projectList } from "@/utils/data";
 
 const Page = async ({ params }) => {
     const slug = await (params).slug
     const projectData = projectList.find((item) => item.modal == slug)
+    const projectFeatures = projectData.features.map((item) => (
+        <li dangerouslySetInnerHTML={{ __html: item }}></li>
+    ))
+    const projectImages = projectData.screenShots
     console.log(slug)
     return (
         <main className="main Section">
-            <h1 className="border-b-2 text-xl font-bold self-start mb-1">
+            <h1 className="border-b-2 text-xl lg:text-2xl font-bold self-start mb-2">
                 {projectData.title}
             </h1>
-            <div className="w-1/2">
-                <YoutubeEmbed embedId="491sMXpVJSs"></YoutubeEmbed>
+            <div className="w-3/5">
+                <YoutubeEmbed embedId={projectData.youtubeEmbed}></YoutubeEmbed>
+                <Carousel
+                    items={projectImages.map((image) => (
+                        <Image
+                            key={image}
+                            src={image}
+                            alt="screenshots of the games made by users of the engine"
+                            sizes="100vw"
+                            style={{
+                                maxWidth: "none",
+                                // width: "auto",
+                                height: "200px",
+                            }}
+                            width={300}
+                            height={150}
+                        />
+                    ))}
+                    isRotating={true}
+                ></Carousel>
                 <p className="mb-2">
                     <b>Date: </b>{projectData.date} | <b>Duration: </b>{projectData.duration}
                 </p>
@@ -28,42 +52,7 @@ const Page = async ({ params }) => {
                 Features & skills:{" "}
             </span>
             <ul className=" text-sm md:text-base ml-2 list-disc list-inside text-gray-600">
-                <li>
-                    Developed <b>Finite State Machine</b> for enemies.
-                </li>
-                <li>
-                    Developed <b>Seek</b>, and an <b>advanced Wander</b> behaviour
-                    for NPCs.
-                </li>
-                <li>
-                    Implemented a <b>collision detection system</b> (AABB) for
-                    receiving and causing damage.
-                </li>
-                <li>
-                    Developed a <b>lively HUD</b> using OpenGL 2D renderer.
-                </li>
-                <li>
-                    Implemented four primitive-based(triangle) meshes by defining
-                    and coding the{" "}
-                    <b>
-                        indices, vertices, surface normals, and texture coordinates.
-                    </b>
-                </li>
-                <li>
-                    Imported static and skeleton-based meshes in the game and
-                    <b> scaled</b>, <b>rotated</b>, and <b>transformed</b> them to
-                    match the needs of the game.
-                </li>
-                <li>
-                    Worked with <b>animations</b> of the characters.
-                </li>
-                <li>
-                    Implemented three different <b>lights</b> in the game. Point
-                    light, directional light, and spot light using OpenGL.
-                </li>
-                <li>
-                    Programmed <b>3D and 2D camera</b> in C++.
-                </li>
+                {projectFeatures}
             </ul>
         </main>
     );

@@ -1,7 +1,8 @@
 import Image from "next/image";
-import "./endless-page.css";
+// import "./endless-page.css";
 import YoutubeEmbed from "@/components/embed-youtube";
 import Carousel from "@/components/carousel";
+import '../../home.css'
 
 export default function EndlessRunnerEngine() {
   const gamesImages = [
@@ -16,9 +17,9 @@ export default function EndlessRunnerEngine() {
   ];
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
-      <h1 className="text-3xl bold mb-6 font-bold">MonoEndlessRunner Engine</h1>
-      <h2 className="text-xl mb-8 font-bold">
+    <main className="flex Section min-h-screen flex-col items-center p-24">
+      <h1 className="Title mb-6 font-bold">MonoEndlessRunner Engine</h1>
+      <h2 className="text-xl mb-6 font-bold">
         A no-code game engine to make endless runner games
       </h2>
       <div>

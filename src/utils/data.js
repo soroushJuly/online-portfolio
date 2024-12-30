@@ -1,6 +1,6 @@
 // -------------------- About -------------------- //
 export const about = {
-  p1: `Hi there! I'm <b>Soroush Jolai</b>, a dedicated <u>game and engine programmer</u> with a passion for optimizing and creating games.`,
+  p1: `Hi there! I'm <b>Soroush</b>, a dedicated <u>game and engine programmer</u> with a passion for optimizing and creating games.`,
   p2: `I enjoy <b>problem-solving</b> and spending hours coding, always paying <b>close attention to detail</b> in the apps I create.
   I've experince <b>working in teams</b> showcasing effective communication skills and a collaborative spirit.
   Learning new things as a programmer is something I'll always do.`,
@@ -28,6 +28,7 @@ export const projectList = [
     date: "2023",
     duration: '3 months',
     thumbnail: "/thumb-the-traveller.jpg",
+    screenShots: [],
     stack: "C++ | GLSL | OpenGL | AI",
     tags: ["Game", "c++", "AI", "Graphics"],
     modal: "traveller",
@@ -40,13 +41,26 @@ export const projectList = [
               low-level code without the help of any extra libraries.`,
     linkToGithub: `https://github.com/soroushJuly/AGT-Project`,
     linkDownload: `https://drive.google.com/file/d/1h45mtGM_YbFuhxE0bdz-T7eS8iMi4K3S/view?usp=drive_link`,
+    youtubeEmbed: '491sMXpVJSs',
+    features: [`Developed <b>Finite State Machine</b> for enemies.`, `Developed <b>Seek</b>, and an <b>advanced Wander</b> behaviour
+                    for NPCs.`, `Implemented a <b>collision detection system</b> (AABB) for
+                    receiving and causing damage.`, `Developed a <b>lively HUD</b> using OpenGL 2D renderer.`, `Implemented four primitive-based(triangle) meshes by defining
+                    and coding the{" "}
+                    <b>
+                        indices, vertices, surface normals, and texture coordinates.
+                    </b>`, ` Imported static and skeleton-based meshes in the game and
+                    <b> scaled</b>, <b>rotated</b>, and <b>transformed</b> them to
+                    match the needs of the game.`, `Worked with <b>animations</b> of the characters.`, `Implemented three different <b>lights</b> in the game. Point
+                    light, directional light, and spot light using OpenGL.`, `Programmed <b>3D and 2D camera</b> in C++.`]
   },
   {
     id: 1,
     title: "Bokeh",
     position: "Programmer/Designer",
     date: "2023",
+    duration: '3 months',
     thumbnail: "/thumb-bokeh.jpg",
+    screenShots: ["/bokeh/01.png", "/thumb-bokeh.jpg"],
     stack: "C++ | Unreal | Game Design | Blueprints",
     tags: ["Game", "Unreal", "c++"],
     description: `Bokeh is the name of the game prototype that I
@@ -57,12 +71,19 @@ export const projectList = [
               players can take pictures with. Also, they can review the pictures
               in the gallery and save the one you like on your hard drive`,
     modal: "Bokeh",
+    youtubeEmbed: null,
+    features: [`Wrote an industry-standard Game Design Document.`, `Implemented an in-game camera using <b>"SceneCaptureComponent2D"</b>.`, `Used blueprints to make a timer, interactable areas, etc.`,
+      `Developed a HUD using the <b>UMG UI</b> system in Unreal Engine.`, `Made the environment with the <b>Landscape System</b> in Unreal
+                Engine.`, `Made realistic grass and flowers using the <b>Foliage System</b>{" "}
+                in Unreal Engine`
+    ]
   },
   {
     id: 6,
     title: "Cat with a Vengence",
     position: "Gameplay/UI Programmer",
-    date: "2024",
+    date: "2024 (Global Game Jam)",
+    duration: "3 days",
     thumbnail: "/thumb-cat.png",
     stack: "C++ | Unreal | Blueprints | Gameplay | UI",
     tags: ["Game", "Unreal", "c++", "Blueprints", "Game Jam"],
@@ -75,6 +96,10 @@ export const projectList = [
     linkPage: `https://globalgamejam.org/games/2024/cat-vengeance-5`,
     linkDownload: `https://ggjv4.s3.us-west-1.amazonaws.com/files/games/2024/788367/exec/GlobalGamJam24_Cat_Build.zip?VersionId=Dd1hZnRw.RePH5G0s6kuoOqy4nHGoQnG`,
     linkToGithub: `https://github.com/soroushJuly/GlobalGameJam24`,
+    youtubeEmbed: null,
+    screenShots: ['/cat/01.png'],
+    features: [`Worked in a team to make a game from scratch with a tight deadline.`, `Used blueprints to make a timer, interactable areas, etc.`, `Developed a lively HUD using the <b>UMG UI</b> system in Unreal
+                Engine.`, `Worked with the fracture system in Unreal Engine.`, `Worked with the animation system in Unreal Engine.`]
   },
   {
     id: 8,
@@ -82,7 +107,9 @@ export const projectList = [
     position: "Game Programmer",
     date: "2024",
     thumbnail: "/thumb-monsterfall.png",
-    stack: "C# |Engine programming | Gameplay | AI | UI",
+    screenShots: [],
+    youtubeEmbed: "nQ5V7zPAlDY?si=0n-4GAYiscPksCtt",
+    stack: "C# | Engine programming | Gameplay | AI | UI",
     tags: ["Game Engine", "Game", "c#", "Monogame", "AI"],
     description: `Monsterfall is an isometric RPG 2D game that I
               developed during the Computer Games Architecture class. I
@@ -94,13 +121,20 @@ export const projectList = [
     modal: "Monsterfall",
     linkDownload: `https://drive.google.com/file/d/1mT8YHT4CHTT3_G3KqWN_piI6pDnxp7wL/view?usp=sharing`,
     linkToGithub: `https://github.com/soroushJuly/Monsterfall_01`,
+    features: [`Implemented <b>event-driven</b> design for input binding and
+                other events like sounds in the game. (<b>Observer Pattern</b>)`, `Implemented <b>data-driven</b> design.`, `MVC architecture`,
+      `Facade Pattern`, `Singleton Pattern`, `Composite Pattern`, `State Pattern`
+    ]
   },
   {
     id: 9,
     title: "Rally Sahara",
     position: "Game Programmer",
     date: "2024",
+    duration: "4 months",
     thumbnail: "/thumb-rally.jpg",
+    youtubeEmbed: "rGzffMcgBIk",
+    screenShots: [],
     stack: "C++ | Graphics | GLSL | OpenGL | Gameplay",
     tags: ["Game Engine", "Graphics", "c++", "OpenGL", "Gameplay"],
     description: `&quot;Rally Sahara&quot; is the name of the Time-Trial game I
@@ -109,12 +143,17 @@ export const projectList = [
     modal: "Rally",
     linkDownload: `https://drive.google.com/file/d/1XlFD-InX2NApGDdAkFZmNy2z-1cXhGtt/view?usp=drive_link`,
     linkToGithub: ``,
+    features: [`The path is created programmatically using "<b>Catmull-Rom splines</b>".`,
+      `Implemented following effect using GLSL and OpenGL:<br /><b>Blur Effect</b> <br /><b>Mirror</b> <br /><b>Multi-texturing</b> <br /><b>Spotlights and Directional light</b>. <br /><b>Toon shader</b>. <br /><b>Instanced Rendering</b>. <br /><b>2.5D Text</b>.`]
   },
   {
     id: 10,
     title: "Son of Persia",
     position: "Game Programmer | Game Designer",
     date: "2024",
+    duration: "4 months",
+    screenShots: ["/persia/01.png", "/persia/02.png", "/persia/03.png", "/persia/04.png", "/persia/05.png",
+      "/persia/06.png", "/persia/07.png", "/persia/08.png", "/persia/09.png"],
     thumbnail: "/thumb-persia.png",
     stack: "C# | Game | Unity | VR | Meta Quest",
     tags: ["Game", "Unity", "c#", "VR"],
@@ -124,13 +163,19 @@ export const projectList = [
     modal: "SonOfPersia",
     linkDownload: `https://drive.google.com/file/d/1MD0fU1NZUd52YRxZMFtjVnP1vHM9z8i7/view?usp=sharing`,
     linkToGithub: `https://github.com/soroushJuly/Son-of-persia-VR`,
+    features: [`Worked with Unity <b>XR toolkit</b> to develop a fully
+                functional VR game.`, `Implemented bow and arrow physics and mechanics in C#.`, `Created a nice environment and atmosphere using Unity Engine.`]
   },
   {
     id: 11,
     title: "Space Connector",
     position: "Game Programmer | Game Designer",
-    date: "2024",
+    date: "2024 (Kenney Game Jam)",
+    duration: "3 days",
     thumbnail: "/thumb-space.jpg",
+    screenShots: ["/space-connector/01.png", "/space-connector/02.png", "/space-connector/03.png",
+      "/space-connector/04.png", "/space-connector/05.png"],
+    YoutubeEmbed: null,
     stack: "C# | Game Jam | Game | Unity ",
     tags: ["Game", "Unity", "c#", "Game Jam"],
     description: `Defend the rocket by placing defence nodes and
@@ -141,6 +186,8 @@ export const projectList = [
     modal: "SpaceConnector",
     linkDownload: `https://soroushjuly.itch.io/space-connectors`,
     linkToGithub: `https://github.com/Shantanu-Bhatt-K/KenneyGameJam/tree/NodeStructure`,
+    features: [`Worked in a team to make a game from scratch in a tight
+                schedule.`, `Developed many gameplay and UI features in <b>Unity</b>.`]
   },
   {
     id: 12,
@@ -151,7 +198,7 @@ export const projectList = [
     stack: "C# | Game Engine | Tools programming",
     tags: ["Game", "Game Engine", "c#", "Tools"],
     description: `MonoEndlessRunner is a no-code game engine and tool developed to help designers and non-programmers make an endless runner game from scratch.`,
-    modal: "EndlessRunner",
+    modal: "endless_runner_engine",
   },
 ];
 
