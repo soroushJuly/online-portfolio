@@ -107,7 +107,7 @@ export const projectList = [
     position: "Programmer/Designer",
     date: "2023",
     thumbnail: "/thumb-bokeh.jpg",
-    stack: "Unreal | Game Design | Blueprints",
+    stack: "C++ | Unreal | Game Design | Blueprints",
     tags: ["Game", "Unreal", "c++"],
     description: `Bokeh is the name of the game prototype that I
               developed during the Game Development Process module. I wrote a
@@ -124,7 +124,7 @@ export const projectList = [
     position: "Gameplay/UI Programmer",
     date: "2024",
     thumbnail: "/thumb-cat.png",
-    stack: "Unreal | Blueprints | Gameplay | UI",
+    stack: "C++ | Unreal | Blueprints | Gameplay | UI",
     tags: ["Game", "Unreal", "c++", "Blueprints", "Game Jam"],
     description: `Cat with a Vengence is the name of the game
               that I participated in creating during Global Game Jam 2024. From
@@ -142,7 +142,7 @@ export const projectList = [
     position: "Game Programmer",
     date: "2024",
     thumbnail: "/thumb-monsterfall.png",
-    stack: "Engine | Gameplay | AI | UI",
+    stack: "C# |Engine programming | Gameplay | AI | UI",
     tags: ["Game Engine", "Game", "c#", "Monogame", "AI"],
     description: `Monsterfall is an isometric RPG 2D game that I
               developed during the Computer Games Architecture class. I
@@ -161,7 +161,7 @@ export const projectList = [
     position: "Game Programmer",
     date: "2024",
     thumbnail: "/thumb-rally.jpg",
-    stack: "Engine | Graphics | OpenGL | Gameplay",
+    stack: "C++ | Graphics | GLSL | OpenGL | Gameplay",
     tags: ["Game Engine", "Graphics", "c++", "OpenGL", "Gameplay"],
     description: `&quot;Rally Sahara&quot; is the name of the Time-Trial game I
               created leveraging C++. I implemented various effects and
@@ -176,7 +176,7 @@ export const projectList = [
     position: "Game Programmer | Game Designer",
     date: "2024",
     thumbnail: "/thumb-persia.png",
-    stack: "Game | Unity | VR | Meta Quest",
+    stack: "C# | Game | Unity | VR | Meta Quest",
     tags: ["Game", "Unity", "c#", "VR"],
     description: `&quot;Son of Peria&quot; is the game that I designed and coded
               using Unity (C#) and Meta Quest 2 headsets. It&apos;s an
@@ -191,7 +191,7 @@ export const projectList = [
     position: "Game Programmer | Game Designer",
     date: "2024",
     thumbnail: "/thumb-space.jpg",
-    stack: "Game | Unity | C#",
+    stack: "C# | Game Jam | Game | Unity ",
     tags: ["Game", "Unity", "c#", "Game Jam"],
     description: `Defend the rocket by placing defence nodes and
               making connection between them. First build up your defence by
@@ -205,12 +205,12 @@ export const projectList = [
   {
     id: 12,
     title: "MonoEndlessRunner",
-    position: "Designer and Game Programmer",
+    position: "Programmer and designer",
     date: "2024",
     thumbnail: "/thumb-endless.png",
-    stack: "Game Engine | C#",
+    stack: "C# | Game Engine | Tools programming",
     tags: ["Game", "Game Engine", "c#", "Tools"],
-    description: ``,
+    description: `MonoEndlessRunner is a no-code game engine and tool developed to help designers and non-programmers make an endless runner game from scratch.`,
     modal: "EndlessRunner",
   },
 ];

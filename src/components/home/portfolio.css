@@ -1,16 +1,29 @@
 .tag .tag--active {
-  @apply bg-colorCardPrimary border-success;
+  @apply bg-success border-success text-text-color bg-opacity-20;
 }
 
-.tag__button{
-  @apply border-2 rounded-xl md:px-2 items-center flex h-full hover:bg-colorBgAccent ;
+.tag__button {
+  @apply border-2 rounded-xl md:px-2 items-center flex h-full hover:bg-colorBgAccent border-gray-300 text-gray-400;
 }
+
 .tag {
   margin-right: 4px;
+
   @screen md {
     margin-right: 12px;
   }
 }
+
 .tag button {
   min-width: 55px;
+}
+
+.card__image {
+  @apply w-10 h-10 md:w-full md:h-auto mr-3;
+  max-width: 200px;
+}
+
+.card__details {
+  @apply absolute right-0 bottom-0;
+  font-size: 0.65rem;
 }
