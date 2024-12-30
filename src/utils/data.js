@@ -60,7 +60,7 @@ export const tools = [
 
 // -------------------- About -------------------- //
 export const about = {
-  p1: `Hi there! I'm <b>Soroush Jolai</b>, a dedicated gameplay engineer and engine programmer with a passion for optimizing and creating games.`,
+  p1: `Hi there! I'm <b>Soroush Jolai</b>, a dedicated <u>game and engine programmer</u> with a passion for optimizing and creating games.`,
   p2: `I enjoy <b>problem-solving</b> and spending hours coding, always paying <b>close attention to detail</b> in the apps I create.
   I've experince <b>working in teams</b> showcasing effective communication skills and a collaborative spirit.
   Learning new things as a programmer is something I'll always do.`,

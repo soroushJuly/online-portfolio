@@ -9,8 +9,9 @@ export default function Head() {
       id="head"
       className="Section Header flex flex-col justify-center items-center relative"
     >
-      <div className=" grid lg:grid-cols-12 justify-center z-10">
-        <div className="lg:col-span-8 col-span-9 md:text-base mb-2 md:mb-0">
+      <h1 className="md:text-3xl text-center mb-12 max-w-4xl" dangerouslySetInnerHTML={{ __html: about.p1 }}></h1>
+      <div className=" grid lg:grid-cols-12 justify-center max-w-5xl z-10">
+        <div className="lg:col-span-8 xl:col-span-9 md:text-base mb-2 md:mb-0">
           <div className="flex mb-3">
             <Image
               alt="Picture of the author in 8-bit style"
@@ -58,7 +59,6 @@ export default function Head() {
               </li>
             </ul>
           </div>
-          <p className="md:text-lg mb-2" dangerouslySetInnerHTML={{ __html: about.p1 }}></p>
           <p className="md:text-lg mb-2" dangerouslySetInnerHTML={{ __html: about.p2 }} />
           <p className="md:text-lg mb-2" dangerouslySetInnerHTML={{ __html: about.p3 }} />
           <p className="md:text-lg mb-2">
@@ -77,7 +77,7 @@ export default function Head() {
           <ul className="flex flex-col text-base pl-3 lg:pl-0">
             <li className="list-disc list-inside">
               Coding game-related subjects. Topics like Programming{" "}
-              <b>Game Engines</b>, <b>Gameplay</b>, <b>AI</b>, and <b>Graphics</b> always catch
+              <b>Game Engines</b>, <b>Gameplay</b>, <b>AI</b>, <b>UI</b>, and <b>Graphics</b> always catch
               my attention.
             </li>
             <li
