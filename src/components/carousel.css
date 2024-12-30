@@ -25,11 +25,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
-  color: #fff;
 }
 
 .carousel-button.left {
@@ -38,4 +36,9 @@
 
 .carousel-button.right {
   right: 10px;
+}
+
+.carousel-button__text {
+  font-size: 2rem !important;
+  @apply bg-colorCardSecondary bg-opacity-90 rounded-md text-colorTertiary;
 }

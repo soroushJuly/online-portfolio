@@ -33,7 +33,7 @@ const Carousel = ({ items, interval = 2000, isRotating }) => {
             //   className={`carousel-item ${index === currentIndex ? "active" : ""}`}
             className={`carousel-item active`}
             style={{
-              transform: `translateX(${10 * (index - currentIndex * 7)}%)`,
+              transform: `translateX(${10 * (index - currentIndex * (items.length + 1))}%)`,
               transition: "transform 0.5s ease",
             }}
           >
@@ -43,10 +43,14 @@ const Carousel = ({ items, interval = 2000, isRotating }) => {
       </div>
 
       <button onClick={prevSlide} className="carousel-button left">
-        &#10094;
+        <span className="material-icons carousel-button__text">
+          chevron_left
+        </span>
       </button>
       <button onClick={nextSlide} className="carousel-button right">
-        &#10095;
+        <span className="material-icons carousel-button__text">
+          chevron_right
+        </span>
       </button>
     </div>
   );
