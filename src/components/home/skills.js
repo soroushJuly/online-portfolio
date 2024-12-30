@@ -43,9 +43,8 @@ const Skills = () => {
     <section id="skills" className="Section Section--white">
       <h3 className="Title col-span-2 h-min">Technical Skills</h3>
       <p className="md:text-xl mb-2 text-center">
-        Here are some of the programming languages that I frequently use and
-        details about how experienced and proficient I am using them. I always
-        have the enthusiasm to learn more.
+        Programming languages that I frequently use and
+        how experienced and proficient I am using them.
       </p>
       <h4 className=" text-xl md:text-3xl underline mb-2 mt-4 md:my-4">
         Programming languages:
@@ -54,7 +53,7 @@ const Skills = () => {
         {langListItems}
       </ul>
       <p
-        className=" border-2 rounded text-sm md:text-base border-gray-400 p-3"
+        className="description"
         dangerouslySetInnerHTML={{ __html: langs[activeLang].description }}
       />
 
@@ -65,7 +64,7 @@ const Skills = () => {
         {toolListItems}
       </ul>
       <p
-        className=" border-2 rounded text-sm md:text-base border-gray-400 p-3 mb-4"
+        className="description mb-4"
         dangerouslySetInnerHTML={{ __html: tools[activeTool].description }}
       />
     </section>

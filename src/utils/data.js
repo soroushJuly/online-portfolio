@@ -1,63 +1,3 @@
-// -------------------- Skills -------------------- //
-// "Description of the level and experince and things I have done",
-export const langs = [
-  {
-    id: 0,
-    name: "C/C++",
-    description: `<b>My level:</b> Advanced <br />I learned <b>C</b> during my bachelor's at Tehran University in 2015.
-     I created a simple Pacman game with only C as the final project. <br /> During the Electronic Systems Object-Oriented Simulations module, 
-     I used <b>C++</b> to create an application to distinguish objects from each other in 2019. In March 2023, I finished a Udemy course called 
-     "The Unreal Arsenal: Learn C++ and Unreal Engine" in which I learned intermediate and advanced subjects about C++ and also coded a project 
-     in C++ in Unreal Engine. I also finished a module during my master's called "Object-Oriented Programming in C++". In this module, I reviewed
-      all the important topics in C++ and object-oriented programming. Also, in the Advanced Games Technology module, I code a complete level of a game
-      only using C++. I coded 3D math problems using C++. I feel pretty confident coding in C++.
-     `,
-  },
-
-  {
-    id: 1,
-    name: "JavaScript",
-    description: `<b>My level:</b> Advanced <br /> I started self-studying JavaScript on 2019. My first professional project with JavaScript was on 2020
-    and since then I worked for differen companies until 2023 and I got involved in different projects. Therefore, I can say I have more than three years
-    of expreince with JavaScripts.
-  `,
-  },
-  {
-    id: 2,
-    name: "Python",
-    description: `<b>My level:</b> Beginner <br /> I have used Python several times during my time at university. I feel I can code Python easily since it is easier 
-  than C++ and JavaScript and since I know the Basics.`,
-  },
-];
-
-export const tools = [
-  {
-    id: 0,
-    name: "Unreal Engine",
-    description: `<b>My level:</b> Intermediate <br /> I've made several games with Unreal Engine. Some were learning-based projects
-    and one was my final project for one of my university modules. I'm comfortable with using Unreal for game development and I'm familiar
-    with the editor and blueprints. Also, I've built a game using mostly C++ in Unreal.`,
-  },
-  {
-    id: 1,
-    name: "Linux",
-    description: `<b>My level:</b> Professional <br /> I've worked with Linux in two different companies and during several modules at university
-    so I'm confident enough to work with it professionally.`,
-  },
-  {
-    id: 2,
-    name: "Git",
-    description: `<b>My level:</b> Advanced <br /> I've used git to control and versioning in almost all the projects that I've worked on.
-    I know the GitFlow and how to work in teams. Also, I know essential commands to use git.`,
-  },
-  {
-    id: 3,
-    name: "Vue & React",
-    description: `<b>My level:</b> vue.js: Advanced | react.js: beginner <br /> I've worked with vue.js and nuxt.js for 3 years and I feel
-    confident using them. Also, I learned about React recently and made this website using it.`,
-  },
-];
-
 // -------------------- About -------------------- //
 export const about = {
   p1: `Hi there! I'm <b>Soroush Jolai</b>, a dedicated <u>game and engine programmer</u> with a passion for optimizing and creating games.`,
@@ -212,5 +152,76 @@ export const projectList = [
     tags: ["Game", "Game Engine", "c#", "Tools"],
     description: `MonoEndlessRunner is a no-code game engine and tool developed to help designers and non-programmers make an endless runner game from scratch.`,
     modal: "EndlessRunner",
+  },
+];
+
+// -------------------- Skills -------------------- //
+// "Description of the level and experince and things I have done",
+export const langs = [
+  {
+    id: 0,
+    name: "C/C++",
+    description: `<b>My level:</b> Advanced <br />I learned <b>C</b> during my bachelor's at Tehran University in 2015.
+     I created a simple Pacman game with only C as the final project. <br /> During the Electronic Systems Object-Oriented Simulations module, 
+     I used <b>C++</b> to create an application to distinguish objects from each other in 2019. In March 2023, I finished a Udemy course called 
+     "The Unreal Arsenal: Learn C++ and Unreal Engine" in which I learned intermediate and advanced subjects about C++ and also coded a project 
+     in C++ in Unreal Engine. I also finished a module during my master's called "Object-Oriented Programming in C++". In this module, I reviewed
+      all the important topics in C++ and object-oriented programming. Also, in the Advanced Games Technology module, I code a complete level of a game
+      only using C++. I coded 3D math problems using C++. I feel pretty confident coding in C++.
+     `,
+  },
+
+  {
+    id: 1,
+    name: "JavaScript",
+    description: `<b>My level:</b> Advanced <br /> I started self-studying JavaScript on 2019. My first professional project with JavaScript was on 2020
+    and since then I worked for differen companies until 2023 and I got involved in different projects. Therefore, I can say I have more than three years
+    of expreince with JavaScripts.
+  `,
+  },
+  {
+    id: 2,
+    name: "Python",
+    description: `<b>My level:</b> Beginner <br /> I have used Python several times during my time at university. I feel I can code Python easily since it is easier 
+  than C++ and JavaScript and since I know the Basics.`,
+  },
+];
+
+export const tools = [
+  {
+    id: 0,
+    name: "Unreal Engine",
+    description: `<b>My level:</b> Intermediate <br /> I've made several games with Unreal Engine. Some were learning-based projects
+    and one was my final project for one of my university modules. I'm comfortable with using Unreal for game development and I'm familiar
+    with the editor and blueprints. Also, I've built a game using mostly C++ in Unreal.
+    <br />Here is the links to related projects: 
+    <br /><a href="projects/${projectList[2].modal}">${projectList[2].title}</a>`,
+  },
+  {
+    id: 1,
+    name: "Unity",
+    description: `<b>My level:</b> Intermediate <br /> I've made couple of games using Unity including an VR experince. I'm very comfortable writing scripts in Unity
+    since the language is c#. 
+    <br />Here is the links to related projects: 
+    <br /><a href="projects/${projectList[5].modal}">${projectList[5].title}</a>
+    <br /><a href="projects/${projectList[6].modal}">${projectList[6].title}</a>`,
+  },
+  {
+    id: 2,
+    name: "Linux",
+    description: `<b>My level:</b> Professional <br /> I've worked with Linux in two different companies and during several modules at university
+    so I'm confident enough to work with it professionally.`,
+  },
+  {
+    id: 3,
+    name: "Git",
+    description: `<b>My level:</b> Advanced <br /> I've used git to control and versioning in almost all the projects that I've worked on.
+    I know the GitFlow and how to work in teams. Also, I know essential commands to use git.`,
+  },
+  {
+    id: 4,
+    name: "Vue & React",
+    description: `<b>My level:</b> vue.js: Advanced | react.js: beginner <br /> I've worked with vue.js and nuxt.js for 3 years and I feel
+    confident using them. Also, I learned about React recently and made this website using it.`,
   },
 ];

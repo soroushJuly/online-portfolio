@@ -6,10 +6,18 @@
 }
 
 .Button-list button:hover {
-  color: orange;
+  @apply text-colorTertiary;
 }
 
 .Button-list button.active {
-  color: orange;
-  text-decoration: underline;
+  @apply text-colorTertiary underline underline-offset-2;
+}
+
+.description
+{
+  @apply border-2 rounded text-sm md:text-base border-gray-400 p-3; 
+}
+
+.description > a {
+  @apply underline;
 }
