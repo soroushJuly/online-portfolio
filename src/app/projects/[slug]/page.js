@@ -1,16 +1,16 @@
 import YoutubeEmbed from "@/components/embed-youtube";
 import Carousel from "@/components/carousel";
 import Image from "next/image";
+import { v4 as uuidv4 } from 'uuid';
 import { projectList } from "@/utils/data";
 
 const Page = async ({ params }) => {
     const slug = await (params).slug
     const projectData = projectList.find((item) => item.modal == slug)
     const projectFeatures = projectData.features.map((item) => (
-        <li dangerouslySetInnerHTML={{ __html: item }}></li>
+        <li dangerouslySetInnerHTML={{ __html: item }} key={uuidv4()}></li>
     ))
     const projectImages = projectData.screenShots
-    console.log(slug)
     return (
         <main className="main Section">
             <h1 className="border-b-2 text-xl lg:text-2xl font-bold self-start mb-2">
