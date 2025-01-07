@@ -1,6 +1,7 @@
 import { Raleway } from "next/font/google";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import { Analytics } from "@vercel/analytics/react"
 
 import "./globals.css";
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <Analytics />
     </html>
   );
 }
