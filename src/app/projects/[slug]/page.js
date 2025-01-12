@@ -40,10 +40,10 @@ const Page = async ({ params }) => {
                     <b>Date: </b>{projectData.date} | <b>Duration: </b>{projectData.duration}
                 </p>
                 <p className="mb-2">
-                    <a href={projectData.linkDownload} target="blank" className="bg-success text-white p-2 rounded-lg mr-2">
+                    <a href={projectData.linkDownload} target="_blank" className="bg-success text-white p-2 rounded-lg mr-2">
                         Download Game
                     </a>
-                    <a href={projectData.linkToGithub} target="blank" className="bg-blue-400 text-white p-2 rounded-lg">
+                    <a href={projectData.linkToGithub} target="_blank" className="bg-blue-400 text-white p-2 rounded-lg">
                         Link to project&apos;s Github
                     </a>
                 </p>
