@@ -142,7 +142,7 @@ export const projectList = [
               techniques using OpenGL and OpenGL shader language (GLSL).`,
     modal: "Rally",
     linkDownload: `https://drive.google.com/file/d/1XlFD-InX2NApGDdAkFZmNy2z-1cXhGtt/view?usp=drive_link`,
-    linkToGithub: ``,
+    linkToGithub: `https://github.com/soroushJuly/RallyGame`,
     features: [`The path is created programmatically using "<b>Catmull-Rom splines</b>".`,
       `Implemented following effect using GLSL and OpenGL:<br /><b>Blur Effect</b> <br /><b>Mirror</b> <br /><b>Multi-texturing</b> <br /><b>Spotlights and Directional light</b>. <br /><b>Toon shader</b>. <br /><b>Instanced Rendering</b>. <br /><b>2.5D Text</b>.`]
   },
