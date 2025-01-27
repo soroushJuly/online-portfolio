@@ -1,10 +1,10 @@
 // -------------------- About -------------------- //
 export const about = {
   p1: `Hi there! I'm <b>Soroush</b>, a dedicated <u>game and engine programmer</u> with a passion for optimizing and creating games.`,
-  p2: `I enjoy <b>problem-solving</b> and spending hours coding, always paying <b>close attention to detail</b> in the apps I create.
+  p3: `I enjoy <b>problem-solving</b> and spending hours coding, always paying <b>close attention to detail</b> in the apps I create.
   I've experince <b>working in teams</b> showcasing effective communication skills and a collaborative spirit.
   Learning new things as a programmer is something I'll always do.`,
-  p3: ``,
+  p2: `I completed my <b>Master's in Computer Games Technology</b> from the <b>City, University of London</b> with <b>distinction/GPA of 4.0</b>, working on cool projects and deepening my understanding of software and game development.`,
 
 };
 
