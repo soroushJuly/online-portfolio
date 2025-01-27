@@ -4,7 +4,7 @@ export const about = {
   p3: `I enjoy <b>problem-solving</b> and spending hours coding, always paying <b>close attention to detail</b> in the apps I create.
   I've experince <b>working in teams</b> showcasing effective communication skills and a collaborative spirit.
   Learning new things as a programmer is something I'll always do.`,
-  p2: `I completed my <b>Master's in Computer Games Technology</b> from the <b>City, University of London</b> with <b>distinction/GPA of 4.0</b>, working on cool projects and deepening my understanding of software and game development.`,
+  p2: `I completed my <b>Master's in Computer Games Technology</b> with <b>distinction (GPA 4.0)</b> from <b>City, University of London</b>, where I worked on exciting projects and deepened my understanding of software and game development.`,
 
 };
 
