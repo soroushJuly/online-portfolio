@@ -24,6 +24,15 @@
   window.onbeforeunload = function () {
     sendMessageToReactNative({ type: "unity_closed" });
   };
+
+  // Function to receive messages from React Native
+  window.sendMessageToUnity = function (message) {
+    console.log("Message received from React Native:", message);
+
+    if (typeof gameInstance !== "undefined") {
+      gameInstance.SendMessage("GameManager", "HandleReactNativeMessage", JSON.stringify(message));
+    }
+  };
 </script>
 
 <body style="text-align: center; padding: 0; border: 0; margin: 0;">
