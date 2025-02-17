@@ -16,9 +16,9 @@
   }
 
   // Notify React Native when Unity WebGL loads
-  window.onload = function () {
-    sendMessageToReactNative({ type: "unity_loaded" });
-  };
+  // window.onload = function () {
+  //   sendMessageToReactNative({ type: "unity_loaded" });
+  // };
 
   // Notify React Native when the game is closed
   window.onbeforeunload = function () {
@@ -57,6 +57,21 @@
       document.body.style.textAlign = "left";
     }
 
+    // createUnityInstance(document.querySelector("#unity-canvas"), {
+    //   arguments: [],
+    //   dataUrl: "Build/XO.data",
+    //   frameworkUrl: "Build/XO.framework.js",
+    //   codeUrl: "Build/XO.wasm",
+    //   streamingAssetsUrl: "StreamingAssets",
+    //   companyName: "July Studio",
+    //   productName: "XO_Game",
+    //   productVersion: "1.0",
+    //   // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+    //   // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+    // });
+
+    var gameInstance = null; // Global variable
+
     createUnityInstance(document.querySelector("#unity-canvas"), {
       arguments: [],
       dataUrl: "Build/XO.data",
@@ -68,7 +83,25 @@
       productVersion: "1.0",
       // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
       // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+    }).then(instance => {
+      gameInstance = instance; // Store Unity instance
+      console.log("Unity WebGL Loaded!");
+      sendMessageToReactNative({ type: "unity_loaded" });
+    }).catch((error) => {
+      console.error("Failed to load Unity WebGL:", error);
     });
+
+    // Function to send messages from React Native to Unity
+    window.sendMessageToUnity = function (message) {
+      console.log("Message received from React Native:", message);
+
+      if (gameInstance) {
+        gameInstance.SendMessage("GameManager", "HandleReactNativeMessage", JSON.stringify(message));
+      } else {
+        console.warn("gameInstance is not ready yet. Retrying in 500ms...");
+        setTimeout(() => window.sendMessageToUnity(message), 500);
+      }
+    };
   </script>
 </body>
 
