@@ -28,8 +28,10 @@
   // Function to receive messages from React Native
   window.sendMessageToUnity = function (message) {
     console.log("Message received from React Native:", message);
+    window.ReactNativeWebView.postMessage("Message received from React Native:", message);
 
     if (typeof gameInstance !== "undefined") {
+      window.ReactNativeWebView.postMessage("Game instance detected, message:", message);
       gameInstance.SendMessage("GameManager", "HandleReactNativeMessage", JSON.stringify(message));
     }
   };
@@ -59,14 +61,14 @@
       arguments: [],
       dataUrl: "Build/XO.data",
       frameworkUrl: "Build/XO.framework.js",
-        codeUrl: "Build/XO.wasm",
-        streamingAssetsUrl: "StreamingAssets",
+      codeUrl: "Build/XO.wasm",
+      streamingAssetsUrl: "StreamingAssets",
       companyName: "July Studio",
       productName: "XO_Game",
       productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
+      // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+      // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+    });
   </script>
 </body>
 
