@@ -28,10 +28,10 @@
   // Function to receive messages from React Native
   window.sendMessageToUnity = function (message) {
     console.log("Message received from React Native:", message);
-    window.ReactNativeWebView.postMessage("Message received from React Native:", message);
+    window.ReactNativeWebView.postMessage("Message received from React Native:" + message);
 
     if (typeof gameInstance !== "undefined") {
-      window.ReactNativeWebView.postMessage("Game instance detected, message:", message);
+      window.ReactNativeWebView.postMessage("Game instance detected, message:" + message);
       gameInstance.SendMessage("GameManager", "HandleReactNativeMessage", JSON.stringify(message));
     }
   };
