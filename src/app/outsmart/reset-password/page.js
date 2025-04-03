@@ -1,19 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import styles from './reset-password.module.css';
 
-export default function ResetPasswordPage() {
-    const router = useRouter();
-    const searchParams = useSearchParams();
-    const token = searchParams.get('token');
-
+function ResetPasswordForm() {
     const [newPassword, setNewPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const router = useRouter();
+    const searchParams = useSearchParams();
+    const token = searchParams.get('token');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -57,7 +56,6 @@ export default function ResetPasswordPage() {
             }
 
             setSuccess(true);
-            alert('Password reset successfully!')
         } catch (err) {
             setError(err.message);
         } finally {
@@ -116,5 +114,22 @@ export default function ResetPasswordPage() {
                 </button>
             </form>
         </div>
+    );
+}
+
+function LoadingState() {
+    return (
+        <div className={styles.container}>
+            <h1>Loading...</h1>
+            <p>Please wait while we verify your reset link.</p>
+        </div>
+    );
+}
+
+export default function ResetPasswordPage() {
+    return (
+        <Suspense fallback={<LoadingState />}>
+            <ResetPasswordForm />
+        </Suspense>
     );
 }
